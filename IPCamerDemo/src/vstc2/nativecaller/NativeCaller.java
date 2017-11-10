@@ -62,10 +62,10 @@ public class NativeCaller {
 	public native static void FormatSD(String did);
 
 	public native static int StartPPPP(String did, String user, String pwd,
-			int bEnableLanSearch, String accountname);
+			int bEnableLanSearch, String accountname, int p2pVer);
 	
 	public native static int StartPPPPExt(String did, String user, String pwd,
-			int bEnableLanSearch, String accountname,String svr_no);
+			int bEnableLanSearch, String accountname,String svr_no, int p2pVer);
 
 	public native static int StopPPPP(String did);
 
@@ -73,6 +73,9 @@ public class NativeCaller {
 			int substreamid);
 
 	public native static int StopPPPPLivestream(String did);
+	
+	//硬解接口
+	public native static int SetHardCodeing(String did,int IsSupport);
 
 	public native static int PPPPPTZControl(String did, int command);
 
@@ -156,10 +159,23 @@ public class NativeCaller {
 	// int schedule_fri_0, int schedule_fri_1, int schedule_fri_2,
 	// int schedule_sat_0, int schedule_sat_1, int schedule_sat_2);
 
-	public native static int PPPPSDRecordSetting(String did, int record_cover_enable, int record_timer, int record_size, int record_chnl, int record_time_enable, int record_schedule_sun_0, int record_schedule_sun_1,
-			int record_schedule_sun_2, int record_schedule_mon_0, int record_schedule_mon_1, int record_schedule_mon_2, int record_schedule_tue_0, int record_schedule_tue_1, int record_schedule_tue_2, int record_schedule_wed_0,
-			int record_schedule_wed_1, int record_schedule_wed_2, int record_schedule_thu_0, int record_schedule_thu_1, int record_schedule_thu_2, int record_schedule_fri_0, int record_schedule_fri_1, int record_schedule_fri_2,
-			int record_schedule_sat_0, int record_schedule_sat_1, int record_schedule_sat_2, int audio_enable);
+	public native static int PPPPSDRecordSetting(String did,
+			int record_cover_enable, int record_timer, int record_size,int record_chnl,
+			int record_time_enable, int record_schedule_sun_0,
+			int record_schedule_sun_1, int record_schedule_sun_2,
+			int record_schedule_mon_0, int record_schedule_mon_1,
+			int record_schedule_mon_2, int record_schedule_tue_0,
+			int record_schedule_tue_1, int record_schedule_tue_2,
+			int record_schedule_wed_0, int record_schedule_wed_1,
+			int record_schedule_wed_2, int record_schedule_thu_0,
+			int record_schedule_thu_1, int record_schedule_thu_2,
+			int record_schedule_fri_0, int record_schedule_fri_1,
+			int record_schedule_fri_2, int record_schedule_sat_0,
+			int record_schedule_sat_1, int record_schedule_sat_2,int audio_enble);
+	
+	public native static int PPPPEverydaySetting(String did,
+			int record_cover_enable, int record_timer, int record_size,int record_chnl,
+			int record_time_enable, int audio_enble);
 
 	public native static int PPPPGetSystemParams(String did, int paramType);
 
@@ -169,5 +185,32 @@ public class NativeCaller {
 
 	public native static int DecodeH264Frame(byte[] h264frame, int bIFrame,
 			byte[] yuvbuf, int length, int[] size);
+
+	 public native static int ResetDecodeH264();
+
+
+	//inputbuff//原音频数据
+	//length//原音频数据长度
+	//outputbuff//转出来的音频数据
+	//public native static int DecodeAudio(byte[] aData,int length,byte[] outbuf);
+
+	//public native static int DecodeAudio(byte[] aData,int length, int isClean,int sample,int index,byte[] outbuf);
+
+	//inputbuff//原音频数据
+	//length//原音频数据长度
+	//outputbuff//转出来的音频数据
+	public native static int DecodeAudio(byte[] aData,int length, int isClean,int sample,int index);
+
+	//不使用时释放掉调用
+	public native static int FreeDecodeAudio();
+
+
+
+	public native static void YUV420SPTOYUV420P(byte[] SrcArray,byte[] DstSrray,int ySize);
+	public native static void YUV420SPTOYUV420POFFSET(byte[] SrcArray,byte[] DstSrray,int ySize,int decYsize);
+	public native static void YUV420OFFSET(byte[] SrcArray,byte[] DstSrray,int ySize,int decYsize);
+
+
+
 
 }
