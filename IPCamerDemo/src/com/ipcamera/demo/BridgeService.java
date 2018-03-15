@@ -1277,4 +1277,23 @@ public class BridgeService extends Service
 
 	}
 
+	//add start by ydzhu 2017-11-20 增加tf卡播放下载接口
+	public void CallBack_TFCardPlayback(String did, byte[] yuv, int type,
+			int size,int width,int height, int timestamp,float pos,float cachePOS) {
+		
+		
+		if (playBackInterface != null) {
+			playBackInterface.callBackPlaybackVideoData(yuv, 1,
+					size, width, height,timestamp,type,0);
+		}
+	}
+
+	public void CallBack_TFCardRecord(String did, float pos,int nError) {
+
+	}
+	//add end
+
+	public void CallBack_LowpowerDevMag(String did,int nState) {
+
+	}
 }

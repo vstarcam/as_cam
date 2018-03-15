@@ -1,5 +1,6 @@
 package com.ipcamera.demo;
 
+import java.io.File;
 import java.util.Calendar;
 import java.util.TimeZone;
 import java.util.Timer;
@@ -16,18 +17,21 @@ import com.ipcamera.demo.utils.CustomBuffer;
 import com.ipcamera.demo.utils.CustomBufferData;
 import com.ipcamera.demo.utils.CustomBufferHead;
 import com.ipcamera.demo.utils.MyRender;
+import com.ipcamera.demo.utils.Tools;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.opengl.GLSurfaceView;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -50,6 +54,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 	private ImageView playImg;
 	private String strDID;
 	private String strFilePath;
+	private int strFilesize;
 	private byte[] videodata = null;
 	private int videoDataLen = 0;
 	private int nVideoWidth = 0;
@@ -155,12 +160,58 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		public void run() {
 			if (isOneShow) {//
 				BridgeService.setPlayBackInterface(PlayBackActivity.this);
-				NativeCaller.StartPlayBack(strDID, strFilePath, 0,0);
+				//NativeCaller.StartPlayBack(strDID, strFilePath, 0,0);
+				NativeCaller.StartPlayBack(strDID, strFilePath, 0, strFilesize, getDiskCacheDir(PlayBackActivity.this), Tools.getPhoneSDKIntForPlayBack(), Tools.getPhoneMemoryForPlayBack());
 				NativeCaller.PPPPGetSystemParams(strDID,ContentCommon.MSG_TYPE_GET_PARAMS);
 				mHandler.postDelayed(mVideoTimeOut, 3000);
 			}
 		}
 	};
+	
+	 public static int getPhoneSDKIntForPlayBack(){
+	        int  a =0;
+	        if(Build.BRAND.toLowerCase().contains("xiaomi")) a =24;
+	          else a =Integer.parseInt(android.os.Build.VERSION.SDK);
+	        return a;
+	    }
+	 public static int getPhoneMemoryForPlayBack(){
+	        if(Tools.getPhoneTotalMemory()>=2.8&&Integer.parseInt(android.os.Build.VERSION.SDK)>=23)
+	            return 1;
+	        else return 0;
+	    }
+	 
+	 
+	
+	
+	public static String getDiskCacheDir(Context mContext){
+		String cachePath;
+		if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+			cachePath = mContext.getExternalCacheDir().getPath();
+		} else {
+			cachePath = mContext.getCacheDir().getPath();
+		}
+		// 防止不存在目录文件，自动创建
+		createFile(cachePath);
+		// 返回文件存储地址
+		return cachePath;
+	}
+	
+	public static File createFile(String fPath){
+		try {
+			File file = new File(fPath);
+			// 当这个文件夹不存在的时候则创建文件夹
+			if(!file.exists()){
+				// 允许创建多级目录
+				file.mkdirs();
+				// 这个无法创建多级目录
+				// rootFile.mkdir();
+			}
+			return file;
+		} catch (Exception e) {
+		}
+		return null;
+	}
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -172,7 +223,9 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.playback);
 		BridgeService.setPlayBackInterface(this);
-		NativeCaller.StartPlayBack(strDID, strFilePath, 0,0);
+		//NativeCaller.StartPlayBack(strDID, strFilePath, 0,0);
+		NativeCaller.StartPlayBack(strDID, strFilePath, 0, strFilesize, getDiskCacheDir(PlayBackActivity.this), Tools.getPhoneSDKIntForPlayBack(), Tools.getPhoneMemoryForPlayBack());
+		
 		//音频数据
 		AudioBuffer = new CustomBuffer();
 		audioPlayer = new AudioPlayer(AudioBuffer);
@@ -214,7 +267,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		Intent intent = getIntent();
 		strDID = intent.getStringExtra("did");
 		strFilePath = intent.getStringExtra("filepath");
-
+		strFilesize = intent.getIntExtra("filesize", 0);
 		Log.d("getDataFromOther", "strDID:" + strDID);
 		Log.d("getDataFromOther", "strFilePath:" + strFilePath);
 	}
@@ -234,22 +287,12 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		super.onConfigurationChanged(newConfig);
 	}
 
-	/*protected void onDestoy() {
+	@Override
+	protected void onDestroy() {
 		super.onDestroy();
 		NativeCaller.StopPlayBack(strDID);
 		StopAudio();
 		exit = false;
-	}*/
-	
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			NativeCaller.StopPlayBack(strDID);
-			StopAudio();
-			exit = false;
-
-		}
-		return super.onKeyDown(keyCode, event);
 	}
 
 	private String setDeviceTime(long millisutc, String tz) {

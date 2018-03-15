@@ -103,8 +103,10 @@ public class NativeCaller {
 
 	public native static int PPPPRestorFactory(String did);
 
-	public native static int StartPlayBack(String did, String filename,
-			int offset, int picTag);
+	//public native static int StartPlayBack(String did, String filename,
+	//		int offset, int picTag);
+	
+	public native static int StartPlayBack(String did, String filename, int offset, long size,String strCachePath,int sdkVersion,int isHD);
 
 	public native static int StopPlayBack(String did);
 

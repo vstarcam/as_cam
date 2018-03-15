@@ -244,6 +244,7 @@ public class PlayBackTFActivity extends Activity implements
 			intent.putExtra("did", playBean.getDid());
 			intent.putExtra("filepath", playBean.getPath());
 			intent.putExtra("videotime", mess);
+			intent.putExtra("filesize", playBean.getVideofilesize());
 			Log.i("info", "filepath:"+filepath+"---mess:"+mess+"---");
 			startActivity(intent);
 			overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);// 
@@ -388,6 +389,7 @@ public class PlayBackTFActivity extends Activity implements
 			PlayBackBean bean = new PlayBackBean();
 			bean.setDid(did);
 			bean.setPath(filename);
+			bean.setVideofilesize(size);
 			mAdapter.addPlayBean(bean);
 			if (TotalPageSize%500 == 0 ) {
 				
