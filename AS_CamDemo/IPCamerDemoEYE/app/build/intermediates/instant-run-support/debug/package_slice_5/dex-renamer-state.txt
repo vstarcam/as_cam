@@ -1,4 +1,0 @@
-#Mon Apr 02 19:57:13 HKT 2018
-base.0=/Users/onesand/Desktop/my/github-vst/vsthub/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5
-renamed.0=classes.dex
-file.0=/Users/onesand/Desktop/my/github-vst/vsthub/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex
