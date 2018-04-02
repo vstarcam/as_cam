@@ -744,13 +744,13 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 				break;
 			case MotionEvent.ACTION_POINTER_DOWN:
 				isSecondDown = true;
-				oldDist = spacing(event);
+				/*oldDist = spacing(event);
 				if (oldDist > 10f) 
 				{
 					savedMatrix.set(matrix);
 					midPoint(mid, event);
 					mode = ZOOM;
-				}
+				}*/
 				break;
 	
 			case MotionEvent.ACTION_MOVE:
@@ -758,10 +758,12 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 				y2 = event.getY();
 	
 				if (mode == ZOOM) {
-					float newDist = spacing(event);
-					if (newDist > 0f) {
+					//float newDist = spacing(event);
+					//if (newDist > 0f)
+					//{
 
-				}
+
+				//}
 			}
 		}
 
@@ -823,7 +825,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		return mMatrixValues[whichValue];
 	}
 
-	private float spacing(MotionEvent event) {
+	/*private float (MotionEvent event) {
 		try {
 			float x = event.getX(0) - event.getX(1);
 			float y = event.getY(0) - event.getY(1);
@@ -831,7 +833,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		} catch (Exception e) {
 		}
 		return 0;
-	}
+	}*/
 
 	private void midPoint(PointF point, MotionEvent event) {
 		float x = event.getX(0) + event.getX(1);

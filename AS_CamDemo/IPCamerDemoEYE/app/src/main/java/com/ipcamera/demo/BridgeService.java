@@ -643,16 +643,16 @@ public class BridgeService extends Service
 		case ContentCommon.MOTION_ALARM:// 移动侦测报警
 			String strMotionAlarm = getResources().getString(
 					R.string.alerm_motion_alarm);
-			getNotification(strMotionAlarm, did, true);
+			//getNotification(strMotionAlarm, did, true);
 			break;
 		case ContentCommon.GPIO_ALARM:
 			String strGpioAlarm = getResources().getString(
 					R.string.alerm_gpio_alarm);
-			getNotification(strGpioAlarm, did, true);
+			//getNotification(strGpioAlarm, did, true);
 			break;
 		case ContentCommon.ALARM_DOORBELL:
 			//此处编写按下门铃需要执行的动作
-			getNotification("门铃来了", did, false);
+			//getNotification("门铃来了", did, false);
 			break;
 		case ContentCommon.HIGHTEMP_ALARM://高温报警
 		case ContentCommon.LOWTEMP_ALARM://低温报警
@@ -745,17 +745,17 @@ public class BridgeService extends Service
 	}
 	
 	//通知
-	@SuppressWarnings("deprecation")
+	/*@SuppressWarnings("deprecation")
 	private Notification getNotification(String content, String did,boolean isAlarm)
 	{
-		mNotify2 = new Notification(R.drawable.app,content, System.currentTimeMillis());
+		*//*mNotify2 = new Notification(R.drawable.app,content, System.currentTimeMillis());
 		mNotify2.defaults |= Notification.DEFAULT_SOUND;//声音
 		mNotify2.setLatestEventInfo(BridgeService.this, "This is content title",
                 "This is content text", null);
 		
 		notifyManager.notify(1, mNotify2);
-		return mNotify2;
-	}
+		return mNotify2;*//*
+	}*/
 
 	private static IpcamClientInterface ipcamClientInterface;
 	public static void setIpcamClientInterface(IpcamClientInterface ipcInterface)
