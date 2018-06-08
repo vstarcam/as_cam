@@ -330,7 +330,7 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		pic_video=(Button) findViewById(R.id.location_pics_videos);
 		pic_video.setOnClickListener(this);
 		done = (Button) findViewById(R.id.done);
-		done.setText("连接");
+		//done.setText("连接");
 		userEdit = (EditText) findViewById(R.id.editUser);
 		pwdEdit = (EditText) findViewById(R.id.editPwd);
 		didEdit = (EditText) findViewById(R.id.editDID);

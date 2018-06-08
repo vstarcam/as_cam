@@ -77,7 +77,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="对码状态中..."
+                        android:text="@string/sensorcodeing"
                         android:textColor="@color/color_white"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -90,7 +90,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/cancel_code"
-                    android:text="退出对码"
+                    android:text="@string/out_sensor"
                     android:textColor="@color/color_white"
                     android:textSize="20sp" />
             </LinearLayout>

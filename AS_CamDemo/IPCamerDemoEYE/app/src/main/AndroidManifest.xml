@@ -68,6 +68,15 @@
              android:name="com.ipcamera.demo.SettingActivity">
             
         </activity>
+
+        <activity
+            android:name="com.ipcamera.demo.MoveNotificationActivity">
+
+        </activity>
+        <activity
+            android:name="com.ipcamera.demo.SCameraSetPushVideoTiming">
+
+        </activity>
         <activity
              android:name="com.ipcamera.demo.SettingUserActivity">
             
