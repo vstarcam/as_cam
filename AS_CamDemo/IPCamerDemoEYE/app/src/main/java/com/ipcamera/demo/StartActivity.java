@@ -45,6 +45,7 @@ public class StartActivity extends Activity {
 					Thread.sleep(3000);
 					Message msg = new Message();
 					mHandler.sendMessage(msg);
+                    NativeCaller.SetAPPDataPath(getApplicationContext().getFilesDir().getAbsolutePath());
 				} catch (Exception e) {
 
 				}
