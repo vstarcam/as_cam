@@ -19,6 +19,7 @@ import com.ipcamera.demo.utils.CustomBufferHead;
 import com.ipcamera.demo.utils.MyRender;
 import com.ipcamera.demo.utils.Tools;
 
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -30,6 +31,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
+import android.os.StatFs;
+import android.text.format.Formatter;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -224,6 +227,14 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		setContentView(R.layout.playback);
 		BridgeService.setPlayBackInterface(this);
 		//NativeCaller.StartPlayBack(strDID, strFilePath, 0,0);
+
+
+		//h265 播放720P 需要大于3g的内存
+		Log.e("videodate",strFilePath +"strFilesize"+strFilesize +"Tools.getPhoneMemoryForPlayBack()"+Tools.getPhoneMemoryForPlayBack());
+		Log.e("videodate",getSysteTotalMemorySize(this)+"");
+		Log.e("videodate",getAvailableInternalMemorySize(this)+"");
+		Log.e("videodate",getTotalInternalMemorySize(this)+"");
+
 		NativeCaller.StartPlayBack(strDID, strFilePath, 0, strFilesize, getDiskCacheDir(PlayBackActivity.this), Tools.getPhoneSDKIntForPlayBack(), Tools.getPhoneMemoryForPlayBack());
 		
 		//音频数据
@@ -235,6 +246,69 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		NativeCaller.PPPPGetSystemParams(strDID,ContentCommon.MSG_TYPE_GET_PARAMS);
 		
 		StartAudio();//开启声音
+	}
+
+	/**
+	  * 获取系统内存大小
+	  * @return
+	  */
+	private String getSysteTotalMemorySize(Context context){
+
+		ActivityManager mActivityManager = (ActivityManager)getSystemService(Context.ACTIVITY_SERVICE);
+
+		ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo() ;
+
+		mActivityManager.getMemoryInfo(memoryInfo) ;
+		long memSize = memoryInfo.totalMem ;
+
+		String availMemStr = Formatter.formatFileSize(context,memSize);
+		return availMemStr ;
+	}
+
+	/**
+
+	 * 获取手机内部可用空间大小
+
+	 * @return
+
+	 */
+
+	static public String getAvailableInternalMemorySize(Context context) {
+
+		File path = Environment.getDataDirectory();
+
+		Log.i("zzz", path.getAbsolutePath());
+
+		StatFs stat = new StatFs(path.getPath());
+
+		long blockSize = stat.getBlockSize();
+
+		long availableBlocks = stat.getAvailableBlocks();
+
+		return Formatter.formatFileSize(context, availableBlocks * blockSize);
+	}
+
+	/**
+
+	 * 获取手机内部空间大小
+
+	 * @return
+
+	 */
+
+	static public String getTotalInternalMemorySize(Context context) {
+
+		File path = Environment.getDataDirectory();//Gets the Android data directory
+
+		Log.i("zzz", path.getAbsolutePath());
+
+		StatFs stat = new StatFs(path.getPath());
+
+		long blockSize = stat.getBlockSize();      //每个block 占字节数
+
+		long totalBlocks = stat.getBlockCount();   //block总数
+
+		return Formatter.formatFileSize(context, totalBlocks * blockSize);
 	}
 
 	@Override
@@ -449,7 +523,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 	@Override
 	public void callBackPlaybackVideoData(byte[] videobuf, int h264Data,
 			int len, int width, int height,int time,int frameType,int originframeLen) {
-		// TODO Auto-generated method stub
+		Log.e("videodate","h264Data"+h264Data);
 		i1++;
 		if (exit == false) {
 			exit = true;

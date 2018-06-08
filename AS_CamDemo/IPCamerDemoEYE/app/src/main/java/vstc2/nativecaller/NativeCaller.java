@@ -38,6 +38,8 @@ public class NativeCaller {
 
 	public native static void PPPPInitialOther(String svr);
 
+	public native static void SetAPPDataPath(String path);
+
 	public native static void UpgradeFirmware(String did, String servPath,
 			String filePath, int type);
 
@@ -88,6 +90,7 @@ public class NativeCaller {
 	public native static int PPPPStopAudio(String did);
 
 	public native static int PPPPStartTalk(String did);
+	public native static int PPPPStartTalk2(String did,int nEnable);
 
 	public native static int PPPPStopTalk(String did);
 
@@ -111,6 +114,10 @@ public class NativeCaller {
 	public native static int StopPlayBack(String did);
 
 	public native static int PausePlayBack(String did,int pause);
+	public native static long PlayBackMovePos(String did,float pos);
+	public native static int SetPlayBackPos(String did,long time);
+	public native static int StrarRecordPlayBack(String did, String filepath);
+	//add end
 
 	public native static int PPPPGetSDCardRecordFileList(String did,
 			int PageIndex, int PageSize);
@@ -190,6 +197,8 @@ public class NativeCaller {
 
 	 public native static int ResetDecodeH264();
 
+	public native static int FindProcessByName(String process);
+
 
 	//inputbuff//原音频数据
 	//length//原音频数据长度
@@ -213,6 +222,39 @@ public class NativeCaller {
 	public native static void YUV420OFFSET(byte[] SrcArray,byte[] DstSrray,int ySize,int decYsize);
 
 
+	/**************************低功耗设备端接口beg************************************/
+	//置前台需要连接服务器
+	public native static int  MagLowpowerDeviceConnect(String jIP);
+	//置后台需要断开服务器
+	public native static void MagLowpowerDeviceDisconnect();
+	//获取与服务器连接状态
+	public native static int  GetConnectStatus();
+	//初化设备
+	public native static int MagLowpowerInitDevice( String jdid);
+	//取设备状态
+	public native static int MagLowpowerGetDeviceStatus(String jdid);
+	//唤醒设备
+	public native static int MagLowpowerAwakenDevice(String jdid);
+/**************************低功耗设备端接口end************************************/
+	//p2pVer:0->PPPP 1->XQP2P
+	public native  static  int GetP2PVersion(int p2pVer);
 
+	//加一个接口    //获取vstc2_jni库版本
+	public native  static  int GetVersion();
+
+	//PP的P2P初化
+	public native static void PTPInitial(String svr);
+	//QX的P2P初化
+	public native static void QXPTPInitial(String svr);
+	//PP的P2P是否初化了 返回 0为没有，1为已初化
+	public native static int IsPTPInitial();
+	//QX的P2P是否初化了 返回 0为没有，1为已初化
+	public native static int IsQXPTPInitial();
+
+	//打印底层jni日志，nEnable=1为开启，0为关闭 
+	//默认是关闭的
+	public  native static void PrintJNILog(int nEnable);
+
+	public native static void FisheyeYUVdataSplit(byte[] inYUV,byte[] OutY,byte[] OutU,byte[] OutV,int nVideoWidth,int nVideoHeight,int nCut);
 
 }

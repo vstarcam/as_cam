@@ -74,6 +74,15 @@
 
         </activity>
         <activity
+            android:name="com.ipcamera.demo.SCameraSetPlanVideoTiming">
+
+        </activity>
+
+        <activity
+            android:name="com.ipcamera.demo.SCameraSetSDTiming">
+
+        </activity>
+        <activity
             android:name="com.ipcamera.demo.SCameraSetPushVideoTiming">
 
         </activity>
