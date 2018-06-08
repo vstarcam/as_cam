@@ -1975,7 +1975,7 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1528425565598" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1528425694483" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1528421360191" />
     <property name="device.picker.selection" value="fc7a494c" />
@@ -2412,12 +2412,12 @@
         <state relative-caret-position="-176">
           <caret line="272" column="47" lean-forward="false" selection-start-line="272" selection-start-column="47" selection-end-line="272" selection-end-column="47" />
           <folding>
-            <element signature="e#2506#2528#0" expanded="true" />
-            <element signature="e#4883#4906#0" expanded="true" />
-            <element signature="e#6074#6096#0" expanded="true" />
-            <element signature="e#7570#7594#0" expanded="true" />
-            <element signature="e#8832#8861#0" expanded="true" />
-            <element signature="e#10091#10114#0" expanded="true" />
+            <element signature="e#2506#2528#0" expanded="false" />
+            <element signature="e#4883#4906#0" expanded="false" />
+            <element signature="e#6074#6096#0" expanded="false" />
+            <element signature="e#7570#7594#0" expanded="false" />
+            <element signature="e#8832#8861#0" expanded="false" />
+            <element signature="e#10091#10114#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2479,8 +2479,8 @@
         <state relative-caret-position="1185">
           <caret line="79" column="60" lean-forward="true" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
           <folding>
-            <element signature="e#3107#3130#0" expanded="true" />
-            <element signature="e#3720#3740#0" expanded="true" />
+            <element signature="e#3107#3130#0" expanded="false" />
+            <element signature="e#3720#3740#0" expanded="false" />
           </folding>
         </state>
       </provider>
