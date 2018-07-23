@@ -139,14 +139,19 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		{
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
 					SystemValue.devicePass,1,"","EEGDFHBAKKIOGNJHEGHMFEEDGLNOHJMPHAFPBEDLADILKEKPDLBDDNPOHKKCIFKJBNNNKLCPPPNDBFDL",0);
-        	else if(SystemValue.deviceId.toLowerCase().startsWith("vstg"))
+    }  	
+     else if(SystemValue.deviceId.toLowerCase().startsWith("vstg"))
 		{
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
-					SystemValue.devicePass,1,"","EEGDFHBOKCIGGFJPECHIFNEBGJNLHOMIHEFJBADPAGJELNKJDKANCBPJGHLAIALAADMDKPDGOENEBECCIK",0);
+					SystemValue.devicePass,1,"","EEGDFHBOKCIGGFJPECHIFNEBGJNLHOMIHEFJBADPAGJELNKJDKANCBPJGHLAIALAADMDKPDGOENEBECCIK:vstarcam2018",0);
+		}else if(SystemValue.deviceId.toLowerCase().startsWith("vstb")||SystemValue.deviceId.toLowerCase().startsWith("vstc"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","ADCBBFAOPPJAHGJGBBGLFLAGDBJJHNJGGMBFBKHIBBNKOKLDHOBHCBOEHOKJJJKJBPMFLGCPPJMJAPDOIPNL",0);
 		}
 		else {
-			NativeCaller.StartPPPP(SystemValue.deviceId, SystemValue.deviceName,
-					SystemValue.devicePass,1,"",0);
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","",0);
 		}
 		//int result = NativeCaller.StartPPPP(SystemValue.deviceId, SystemValue.deviceName,
 		//		SystemValue.devicePass,1,"");
