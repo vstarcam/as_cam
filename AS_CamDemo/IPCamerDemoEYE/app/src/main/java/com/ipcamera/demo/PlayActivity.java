@@ -1620,13 +1620,9 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		dismissBrightAndContrastProgress();
 		if (isTakeVideo) {
 			showToast(R.string.ptz_takevideo_end);
-			Log.d("tag", "停止录像");
-			/*if(!isJpeg)
-			{
-				NativeCaller.RecordLocal(strDID,0);
-			}*/
+			Log.d("tag", "停止录像 stop");
+
 			String strRecord = "";
-			//NativeCaller.RecordLocal(strDID,strRecord,0);
 			NativeCaller.RecordLocal(strDID,strRecord,0);
 			isTakeVideo = false;
 			ptzTake_vodeo.setImageResource(R.drawable.ptz_takevideo);
@@ -1634,21 +1630,13 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		} else {
 			isTakeVideo = true;
 			showToast(R.string.ptz_takevideo_begin);
-			Log.d("tag", "开始录像");
+			Log.d("tag", "开始录像  start");
 			videotime = (new Date()).getTime();
 			ptzTake_vodeo.setImageResource(R.drawable.ptz_takevideo_pressed);
 			String strRecord = "/mnt/sdcard/Video/test5.mp4";
+			//strRecord  录像文件路径，可以根据实际需求自行定义
 			NativeCaller.RecordLocal(strDID,strRecord,1);
-			/*if(!isJpeg)
-			{
-				NativeCaller.RecordLocal(strDID,1);
-			}
-			
-			if (isJpeg) {
-				myvideoRecorder.startRecordVideo(2);
-			} else {
-				myvideoRecorder.startRecordVideo(1);
-			}*/
+
 		}
 	}
 	private void stopTakevideo() {

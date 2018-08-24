@@ -458,7 +458,7 @@
 
     <string name="connect">连接</string>
     <string name="see_mode">预览模式</string>
-    <string name="locat_video">本地视频</string>
+    <string name="locat_video">本地图片</string>
     <string name="chang_pwd">修改密码</string>
     <string name="sensorsetting">传感器设置</string>
     <string name="sd_record">TF卡远程录像</string>

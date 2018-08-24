@@ -472,7 +472,7 @@
 
     <string name="connect">Connect</string>
     <string name="see_mode">Preview mode</string>
-    <string name="locat_video">Local video</string>
+    <string name="locat_video">Local photo</string>
     <string name="chang_pwd">change Password</string>
     <string name="sensorsetting">Sensor settings</string>
     <string name="sd_record">TF card remote video</string>
