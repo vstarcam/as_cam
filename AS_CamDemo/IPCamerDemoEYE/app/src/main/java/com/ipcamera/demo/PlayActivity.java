@@ -1633,9 +1633,15 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			Log.d("tag", "开始录像  start");
 			videotime = (new Date()).getTime();
 			ptzTake_vodeo.setImageResource(R.drawable.ptz_takevideo_pressed);
-			String strRecord = "/mnt/sdcard/Video/test5.mp4";
+			File div = new File(Environment.getExternalStorageDirectory(),
+					"ipcamerademo/takepic");
+			if (!div.exists()) {
+				div.mkdirs();
+			}
+			File file = new File(div,  strDID + "_"+ getStrDate()+".mp4");
+			NativeCaller.RecordLocal(strDID,file.getAbsolutePath(),1);
 			//strRecord  录像文件路径，可以根据实际需求自行定义
-			NativeCaller.RecordLocal(strDID,strRecord,1);
+			
 
 		}
 	}
