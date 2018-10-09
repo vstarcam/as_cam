@@ -1,7 +1,0 @@
-#Tue Oct 09 15:05:56 CST 2018
-base.0=/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_dc4d9151f8cbb7765bbe05048d7b9e1264e5e305
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d6dc7613db4ae8097f615c36f6d319193a1d6da4/classes.dex
-base.1=/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d6dc7613db4ae8097f615c36f6d319193a1d6da4
-file.0=/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_dc4d9151f8cbb7765bbe05048d7b9e1264e5e305/classes.dex
