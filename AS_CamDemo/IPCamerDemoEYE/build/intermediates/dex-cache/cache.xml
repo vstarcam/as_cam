@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85872f2f8bea72ec029bdc63aadebfa3603e0c53">
+        <dex dex="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_dc4d9151f8cbb7765bbe05048d7b9e1264e5e305/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/libs/GetuiSDK2.11.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cb95fc505fb52967a4d818857953b88ba4391bb">
+        <dex dex="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/2/GetuiSDK2.11.1.0_07ea02a821cd822ef11a5af624f86c419b9a836a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/libs/json_simple-1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/2/json_simple-1.1_6c066b2d723ed9b927d3c5a22fb8bc94d71673e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/vstarcam/Desktop/vst/github/android_cam_eclipse/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d6dc7613db4ae8097f615c36f6d319193a1d6da4/classes.dex" />
+    </item>
+
+</items>

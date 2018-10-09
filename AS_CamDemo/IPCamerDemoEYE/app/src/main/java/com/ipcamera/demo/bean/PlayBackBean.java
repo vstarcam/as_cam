@@ -10,6 +10,7 @@ public class PlayBackBean implements Serializable{
 	private String did;
 	private String path;
 	private int videotime;
+	private int size;
 	public String getDid() {
 		return did;
 	}
@@ -28,4 +29,10 @@ public class PlayBackBean implements Serializable{
 	public int getVideotime(){
 		return videotime;
 	}
+
+	public int getVideofilesize()
+	{
+		return size;
+	}
+	public void setVideofilesize(int size){this.size = size;}
 	}

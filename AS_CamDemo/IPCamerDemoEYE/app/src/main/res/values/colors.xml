@@ -7,6 +7,7 @@
     <color name="cache_color_hint">#00000000</color>
     <color name="color_divider">#ffdddddd</color>
     <color name="color_black">#ff000000</color>
+    <color name="black">#000000</color>
     <color name="color_less_black">#ee000000</color>
     <color name="color_info">#ff7F7F7F</color>
     <color name="more_subtitle">#ff0044ff</color>
@@ -52,6 +53,7 @@
     <color name="viewfinder_mask">#60000000</color>
     <color name="header">#58567D</color>
     <color name="grgray">#686868</color>
+    <color name="hint">#cccccc</color>
     <color name="color_alarm_textcolor">#5C5B5B</color>
        <color name="color_startcode_bg">#2EC6F6</color>
 
