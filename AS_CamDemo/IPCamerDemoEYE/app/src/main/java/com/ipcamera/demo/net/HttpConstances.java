@@ -1,0 +1,18 @@
+package com.ipcamera.demo.net;
+
+/*
+ * 编写：wenlong on 2017/10/30 17:39
+ * 企业QQ： 2853239883
+ * 钉钉：13430330686
+ */
+public class HttpConstances {
+    //public static final String BASE_SERVICE_URL = "https://api.eye4.cn";  //正式 http://push2.eye4.cn:3000/binding
+    public static final String BASE_SERVICE_URL="http://push2.eye4.cn:3000";
+    //基于设备的app推送
+    //绑定接口
+    public static String BAND_APP_PUSH_BY_DEVICES=BASE_SERVICE_URL+"/binding";
+    //解绑接口
+    public static String UNBAND_APP_PUSH_BY_DEVICES=BASE_SERVICE_URL+"/unbind";
+    //设置语言
+    public static String SETLANGUAGE=BASE_SERVICE_URL+"/setLanguage";
+}

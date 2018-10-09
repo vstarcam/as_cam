@@ -35,6 +35,9 @@
     </uses-permission>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:icon="@drawable/app"
         android:label="@string/app_name" >
@@ -153,8 +156,71 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.ipcamera.demo.BridgeService" >
-        </service>
-    </application>
+        <service android:name="com.ipcamera.demo.BridgeService"></service>
 
+        <activity android:name="com.ipcamera.demo.IpConnectActivity"></activity>
+
+        <!--  ********************************-以下 个推配置******************************** -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="9e8ate29YR6eb948bVlTk4"/>
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="bThEinZWlVA3yEHhhtHwH1"/>
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="JQmHj8QvmL776e5qwRgUz8"/>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ipcamera.demo.DemoIntentService"/>
+        <!-- 用户自定义服务名 -->
+        <service
+            android:name="com.ipcamera.demo.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice"></service>
+        <!-- ********************************以上 个推权限******************************** -->
+    </application>
+<!-- ********************************以下 个推权限******************************** -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- ********************************以上 个推权限******************************** -->
 </manifest>

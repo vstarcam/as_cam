@@ -272,6 +272,18 @@
                     android:text="联动摄像机设置"
                     android:textColor="@color/color_black"
                     android:textSize="@dimen/text_title_size" />
+
+
+                <Button
+                    android:id="@+id/btn_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="注册登录接口"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_title_size" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

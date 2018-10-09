@@ -98,6 +98,7 @@ public class ContentCommon {
 	public static final int PPPP_MSG_TYPE_PPPP_STATUS = 0;
 	public static final int PPPP_MSG_TYPE_PPPP_MODE = 1;
 	public static final int PPPP_MSG_TYPE_STREAM = 2;
+	public static final int PPPP_MSG_TYPE_RECORD_STATUS = 4;
 	public static final int PPPP_MSG_TYPE_INVALID_MSG = 0xffffffff;
 
 	public static final int PPPP_STREAM_TYPE_H264 = 0;
