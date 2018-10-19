@@ -140,8 +140,8 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		{
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
 					SystemValue.devicePass,1,"","EEGDFHBAKKIOGNJHEGHMFEEDGLNOHJMPHAFPBEDLADILKEKPDLBDDNPOHKKCIFKJBNNNKLCPPPNDBFDL",0);
-    }
-     else if(SystemValue.deviceId.toLowerCase().startsWith("vstg"))
+    	}
+     	else if(SystemValue.deviceId.toLowerCase().startsWith("vstg"))
 		{
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
 					SystemValue.devicePass,1,"","EEGDFHBOKCIGGFJPECHIFNEBGJNLHOMIHEFJBADPAGJELNKJDKANCBPJGHLAIALAADMDKPDGOENEBECCIK:vstarcam2018",0);

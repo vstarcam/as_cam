@@ -31,7 +31,7 @@
                 android:layout_marginLeft="10.0dip"
                 android:layout_marginRight="10.0dip"
                 android:layout_marginTop="5.0dip"
-                android:hint="设备UID"
+                android:hint="Input Device UID"
                 android:textColorHint="@color/hint"
                 android:textColor="@color/black"
                 android:maxLength="64"
@@ -45,7 +45,7 @@
         android:id="@+id/btn_get_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="获取token"/>
+        android:text="@string/get_gttoken"/>
     <EditText
         android:id="@+id/et_token"
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
         android:layout_marginLeft="10.0dip"
         android:layout_marginRight="10.0dip"
         android:layout_marginTop="5.0dip"
-        android:hint="第三方推送平台获取的唯一token"
+        android:hint="个推 Token"
         android:textColor="@color/black"
         android:textColorHint="@color/hint"
         android:maxLength="64"
@@ -85,7 +85,7 @@
                 android:layout_marginLeft="10.0dip"
                 android:layout_marginRight="10.0dip"
                 android:layout_marginTop="5.0dip"
-                android:text="绑定设备" />
+                android:text="@string/bing_dev" />
 
             <Button
                 android:id="@+id/btn_2"
@@ -95,7 +95,7 @@
                 android:layout_marginLeft="10.0dip"
                 android:layout_marginRight="10.0dip"
                 android:layout_marginTop="5.0dip"
-                android:text="解绑设备" />
+                android:text="@string/unbing_dev" />
 
             <Button
                 android:id="@+id/btn_3"
@@ -105,7 +105,7 @@
                 android:layout_marginLeft="10.0dip"
                 android:layout_marginRight="10.0dip"
                 android:layout_marginTop="5.0dip"
-                android:text="设置语言" />
+                android:text="set_push_language" />
 
         </LinearLayout>
     </ScrollView>

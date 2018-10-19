@@ -478,4 +478,9 @@
     <string name="sd_record">TF card remote video</string>
     <string name="out_sensor">Exit code</string>
     <string name="sensorcodeing">In code state...</string>
+
+    <string name="get_gttoken">Get Push Token</string>
+    <string name="bing_dev">Bing Device</string>
+    <string name="unbing_dev">Unbing Device</string>
+    <string name="set_push_language">Setting </string>
 </resources>

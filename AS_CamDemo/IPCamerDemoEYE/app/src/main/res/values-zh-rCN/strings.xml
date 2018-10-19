@@ -496,5 +496,9 @@
     <string name="add_tag_error_not_online">还未登陆成功</string>
     <string name="add_tag_error_black_list">该应用已经在黑名单中,请联系售后支持!</string>
     <string name="add_tag_error_exceed">已存 tag 超过限制</string>
+    <string name="get_gttoken">获取个推Token</string>
+    <string name="bing_dev">绑定设备</string>
+    <string name="unbing_dev">解绑设备</string>
+    <string name="set_push_language">设置推送语言</string>
 
 </resources>
