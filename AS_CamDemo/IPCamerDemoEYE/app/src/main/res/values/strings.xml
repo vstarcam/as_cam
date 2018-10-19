@@ -483,4 +483,5 @@
     <string name="bing_dev">Bing Device</string>
     <string name="unbing_dev">Unbing Device</string>
     <string name="set_push_language">Setting </string>
+    <string name="reg_push">Registered Push Setting</string>
 </resources>

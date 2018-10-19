@@ -500,5 +500,6 @@
     <string name="bing_dev">绑定设备</string>
     <string name="unbing_dev">解绑设备</string>
     <string name="set_push_language">设置推送语言</string>
+    <string name="reg_push">注册推送设置</string>
 
 </resources>
