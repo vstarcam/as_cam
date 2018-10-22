@@ -68,7 +68,7 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 	private Button button_setting = null;
 	private Button pic_video=null;
 	private Button button_linkcamera=null;
-	private Button btn_ip=null;
+	private Button btn_ip=null,btn_info;
 	private int tag = 0;
 
 	class MyTimerTask extends TimerTask {
@@ -351,10 +351,13 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		btnSearchCamera = (Button) findViewById(R.id.btn_searchCamera);
 		button_linkcamera=(Button)findViewById(R.id.btn_linkcamera);
 		btn_ip=(Button)findViewById(R.id.btn_ip);
+		btn_info = (Button)findViewById(R.id.getInfo);
 		button_linkcamera.setOnClickListener(this);
 		button_play.setOnClickListener(this);
 		button_setting.setOnClickListener(this);
 		btn_ip.setOnClickListener(this);
+		btn_info.setOnClickListener(this);
+		btn_info.setVisibility(View.GONE);
 	}
 	/**
 	 * 摄像机在线时可以获取一张摄像机当前的画面图
@@ -434,6 +437,9 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 
 			case R.id.btn_ip:
 				startActivity(new Intent(AddCameraActivity.this,IpConnectActivity.class));
+				break;
+			case R.id.getInfo:
+				startActivity(new Intent(AddCameraActivity.this,MessageActivity.class));
 				break;
 		default:
 			break;

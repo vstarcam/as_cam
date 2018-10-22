@@ -1,34 +1,55 @@
 package com.ipcamera.demo;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
+import android.support.v7.widget.DialogTitle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import com.igexin.sdk.PushManager;
 import com.ipcamer.demo.R;
+import com.ipcamera.demo.adapter.MessageAdapter;
 import com.ipcamera.demo.bean.ErrorBean;
 import com.ipcamera.demo.bean.JsonBean;
+import com.ipcamera.demo.bean.MessageBean;
 import com.ipcamera.demo.bean.PushBindDeviceBean;
 import com.ipcamera.demo.bean.SetLanguageBean;
 import com.ipcamera.demo.net.ApiCallBack;
 import com.ipcamera.demo.net.HttpConstances;
 import com.ipcamera.demo.net.HttpHelper;
 import com.ipcamera.demo.net.VcmApi;
+import com.ipcamera.demo.utils.ContentCommon;
 import com.ipcamera.demo.utils.EncryptionUtils;
 import com.ipcamera.demo.utils.Log;
 import com.ipcamera.demo.utils.StringUtils;
 import com.ipcamera.demo.utils.ToastUtils;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class IpConnectActivity extends Activity implements View.OnClickListener{
 private EditText et_uid,et_token,et_oemid;
     private  PushBindDeviceBean pushBindDeviceBean=null;
+
     private SetLanguageBean setLanguageBean=null;
-    private Button btn_get_token;
+    private Button btn_get_token,info_button;
     // DemoPushService.class 自定义服务名称, 核心服务
     private Class userPushService = DemoPushService.class;
+
+    private ListView mListview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,16 +105,24 @@ private EditText et_uid,et_token,et_oemid;
         //de en es fr it ja ko nl pl pt-br ru th vi zh zh_FT
         setLanguageBean.setLanguage("zh");
 
+
+
+
     }
 
     private void initView() {
         et_uid=(EditText)findViewById(R.id.et_uid);
         et_token=(EditText)findViewById(R.id.et_token);
         et_oemid=(EditText)findViewById(R.id.et_oemid);
+        info_button = (Button)findViewById(R.id.getInfo);
         findViewById(R.id.btn_get_token).setOnClickListener(this);
         findViewById(R.id.btn_1).setOnClickListener(this);
         findViewById(R.id.btn_2).setOnClickListener(this);
         findViewById(R.id.btn_3).setOnClickListener(this);
+        info_button.setOnClickListener(this);
+
+
+
     }
 
     @Override
@@ -124,6 +153,11 @@ private EditText et_uid,et_token,et_oemid;
 
            case R.id.btn_get_token:
                et_token.setText(PushManager.getInstance().getClientid(this));
+               break;
+           case R.id.getInfo:
+               Intent i = new Intent(this,MessageActivity.class);
+               startActivity(i);
+               //getDevicesInfo();
                break;
        }
     }
@@ -189,4 +223,10 @@ private EditText et_uid,et_token,et_oemid;
             }
         });
     }
+
+
+
+
+
+
 }

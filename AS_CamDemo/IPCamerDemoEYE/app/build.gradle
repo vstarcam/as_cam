@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion  23
+    compileSdkVersion 23
     buildToolsVersion "25.0.0"
     useLibrary 'org.apache.http.legacy'
 
@@ -10,9 +10,9 @@ android {
         minSdkVersion 18
         targetSdkVersion 18
         manifestPlaceholders = [
-                GETUI_APP_ID : "9e8ate29YR6eb948bVlTk4",
-                GETUI_APP_KEY : "bThEinZWlVA3yEHhhtHwH1",
-                GETUI_APP_SECRET : "JQmHj8QvmL776e5qwRgUz8"
+                GETUI_APP_ID    : "9e8ate29YR6eb948bVlTk4",
+                GETUI_APP_KEY   : "bThEinZWlVA3yEHhhtHwH1",
+                GETUI_APP_SECRET: "JQmHj8QvmL776e5qwRgUz8"
         ]
 
         ndk {
@@ -47,4 +47,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile files('libs/GetuiSDK2.11.1.0.jar')
     compile files('libs/json_simple-1.1.jar')
+
 }

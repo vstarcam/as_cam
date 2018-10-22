@@ -502,4 +502,7 @@
     <string name="set_push_language">设置推送语言</string>
     <string name="reg_push">注册推送设置</string>
 
+    <string name="dev_offline">离线</string>
+    <string name="get_message_info">消息记录</string>
+
 </resources>

@@ -17,6 +17,6 @@ public class Log {
     }
     public static void print(String info){
         if (isDebug)
-            System.out.println("LOG PRINTLN: "+info);
+            Log.e("api","LOG PRINTLN: "+info);
     }
 }

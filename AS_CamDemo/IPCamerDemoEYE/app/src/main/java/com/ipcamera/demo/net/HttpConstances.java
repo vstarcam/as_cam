@@ -15,4 +15,7 @@ public class HttpConstances {
     public static String UNBAND_APP_PUSH_BY_DEVICES=BASE_SERVICE_URL+"/unbind";
     //设置语言
     public static String SETLANGUAGE=BASE_SERVICE_URL+"/setLanguage";
+
+    //获取记录
+    public static String GETINFO = BASE_SERVICE_URL+"/getRecord";
 }

@@ -37,18 +37,20 @@
                 android:maxLength="64"
                 android:text=""
                 android:singleLine="true" />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <Button
-        android:id="@+id/btn_get_token"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/get_gttoken"/>
-    <EditText
-        android:id="@+id/et_token"
-        android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+            android:id="@+id/btn_get_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_gttoken"/>
+
+                <EditText
+            android:id="@+id/et_token"
+            android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="3.0dip"
         android:layout_marginLeft="10.0dip"
@@ -105,8 +107,25 @@
                 android:layout_marginLeft="10.0dip"
                 android:layout_marginRight="10.0dip"
                 android:layout_marginTop="5.0dip"
-                android:text="set_push_language" />
+                android:text="@string/set_push_language" />
+
+
+            <Button
+                android:id="@+id/getInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:visibility="gone"
+                android:text="@string/get_message_info" />
+
 
         </LinearLayout>
+
+
     </ScrollView>
+
+
 </LinearLayout>

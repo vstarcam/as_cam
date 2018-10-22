@@ -88,7 +88,8 @@ public class HttpHelper {
     private Request buildRequest(String url, HttpMethodType methodType, Map<String, Object> params){
         return buildRequest(url, HttpMethodType.POST,   new Gson().toJson(params));
     }
-public static String signature="";
+    public static String signature="";
+
     private Request buildRequest(String url, HttpMethodType methodType, String json){
         Request.Builder build = new Request.Builder()
                 .url(url);

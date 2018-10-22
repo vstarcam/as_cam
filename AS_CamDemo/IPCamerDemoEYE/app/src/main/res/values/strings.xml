@@ -482,6 +482,9 @@
     <string name="get_gttoken">Get Push Token</string>
     <string name="bing_dev">Bing Device</string>
     <string name="unbing_dev">Unbing Device</string>
-    <string name="set_push_language">Setting </string>
+    <string name="set_push_language">Setting Push Language</string>
     <string name="reg_push">Registered Push Setting</string>
+
+    <string name="dev_offline">offline</string>
+    <string name="get_message_info">Message record</string>
 </resources>
