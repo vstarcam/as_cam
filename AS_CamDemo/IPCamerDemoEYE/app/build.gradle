@@ -47,5 +47,8 @@ dependencies {
     compile 'com.google.code.gson:gson:2.7'
     compile files('libs/GetuiSDK2.11.1.0.jar')
     compile files('libs/json_simple-1.1.jar')
+    //compile files('libs/okhttp-3.8.1.jar')
+    //compile files('libs/okio-1.13.0.jar')
+
 
 }

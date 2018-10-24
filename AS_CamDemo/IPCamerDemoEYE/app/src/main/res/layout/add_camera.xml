@@ -281,7 +281,7 @@
                     android:layout_gravity="right"
                     android:gravity="center"
                     android:paddingLeft="15dp"
-                    android:text="注册推送接口"
+                    android:text="@string/reg_push"
                     android:textColor="@color/color_black"
                     android:textSize="@dimen/text_title_size" />
                 <Button

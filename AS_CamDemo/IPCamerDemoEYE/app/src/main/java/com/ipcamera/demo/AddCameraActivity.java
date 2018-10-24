@@ -357,7 +357,7 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		button_setting.setOnClickListener(this);
 		btn_ip.setOnClickListener(this);
 		btn_info.setOnClickListener(this);
-		btn_info.setVisibility(View.GONE);
+		btn_info.setVisibility(View.VISIBLE);
 	}
 	/**
 	 * 摄像机在线时可以获取一张摄像机当前的画面图
