@@ -70,7 +70,7 @@ public class MessageActivity extends Activity {
 
     private boolean textIsNull(EditText editText){
         if (editText.getText().toString().equals("")){
-            ToastUtils.show(MessageActivity.this,"存在输入框为空");
+            ToastUtils.show(MessageActivity.this,getString(R.string.input_null));
             return false;
         }else {
             return true;

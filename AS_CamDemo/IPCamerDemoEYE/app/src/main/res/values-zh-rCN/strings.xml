@@ -504,5 +504,6 @@
 
     <string name="dev_offline">离线</string>
     <string name="get_message_info">消息记录</string>
+    <string name="input_null">存在输入框为空</string>
 
 </resources>

@@ -75,7 +75,7 @@ public class MessageAdapter extends BaseAdapter {
 		{
 			holder.dz.setText(context.getResources().getString(string.dev_offline));
 		}else{
-			holder.dz.setText(mMessageBean.getDz());
+			holder.dz.setText("rea = "+mMessageBean.getDz());
 		}
 
 		holder.time.setText(timeStamp2Date(mMessageBean.getDate(),"yyyy-MM-dd HH:mm:ss"));

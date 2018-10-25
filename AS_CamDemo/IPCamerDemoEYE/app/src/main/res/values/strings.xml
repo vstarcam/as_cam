@@ -487,4 +487,5 @@
 
     <string name="dev_offline">offline</string>
     <string name="get_message_info">Message record</string>
+    <string name="input_null">The input content is empty </string>
 </resources>
