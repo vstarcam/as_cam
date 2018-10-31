@@ -149,6 +149,10 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		{
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
 					SystemValue.devicePass,1,"","EEGDFHBOKCIGGFJPECHIFNEBGJNLHOMIHEFJBADPAGJELNKJDKANCBPJGHLAIALAADMDKPDGOENEBECCIK:vstarcam2018",0);
+		}else if(SystemValue.deviceId.toLowerCase().startsWith("vsth"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","EEGDFHBLKGJIGEJLEKGOFMEDHAMHHJNAGGFABMCOBGJOLHLJDFAFCPPHGILKIKLMANNHKEDKOINIBNCPJOMK:vstarcam2018",0);
 		}else if(SystemValue.deviceId.toLowerCase().startsWith("vstb")||SystemValue.deviceId.toLowerCase().startsWith("vstc"))
 		{
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
@@ -158,9 +162,6 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
 					SystemValue.devicePass,1,"","",0);
 		}
-		//int result = NativeCaller.StartPPPP(SystemValue.deviceId, SystemValue.deviceName,
-		//		SystemValue.devicePass,1,"");
-		//Log.i("ip", "result:"+result);
 	}
 
 	private void stopCameraPPPP()
@@ -357,7 +358,12 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		button_setting.setOnClickListener(this);
 		btn_ip.setOnClickListener(this);
 		btn_info.setOnClickListener(this);
-		btn_info.setVisibility(View.VISIBLE);
+		if(true)
+        {
+        	//具体使用方法，请联系 dfc@vstarcam.com
+            btn_ip.setVisibility(View.GONE);
+            btn_info.setVisibility(View.GONE);
+        }
 	}
 	/**
 	 * 摄像机在线时可以获取一张摄像机当前的画面图
