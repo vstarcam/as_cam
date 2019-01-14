@@ -371,6 +371,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 
 	private String setDeviceTime(long millisutc, String tz) {
 
+
 		TimeZone timeZone = TimeZone.getTimeZone(tz);
 		Calendar calendar = Calendar.getInstance(timeZone);
 		calendar.setTimeInMillis(millisutc);
@@ -523,7 +524,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 	@Override
 	public void callBackPlaybackVideoData(byte[] videobuf, int h264Data,
 			int len, int width, int height,int time,int frameType,int originframeLen) {
-		Log.e("videodate","h264Data"+h264Data);
+		Log.e("videodate","h264Data"+h264Data+"fremetype"+frameType);
 		i1++;
 		if (exit == false) {
 			exit = true;
@@ -536,6 +537,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		nVideoWidth = width;
 		nVideoHeight = height;
 		time1 = this.time * 1000;
+		if(time >0)
 		timeShow = setDeviceTime(time1, tzStr);
 		if (h264Data == 1) { // H264
 			mHandler.sendEmptyMessage(1);
@@ -544,7 +546,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		}
 		
 		///音频数据
-		if (h264Data == 0 && frameType == 6) 
+		if (h264Data == 1 && frameType == 6)
 		{
 			// Log.e("vst ", "h264Data == 0 && FrameType == 6 ");
 			/*
@@ -557,7 +559,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 			CustomBufferHead head = new CustomBufferHead();
 			CustomBufferData data = new CustomBufferData();
 			head.length = len;
-			// Log.e("vst ", "h264Data == 0 && FrameType == 6 " + "len" + len);
+			 //Log.e("vst ", "h264Data == 0 && FrameType == 6 " + "len" + len);
 			head.startcode = AUDIO_BUFFER_START_CODE;
 			data.head = head;
 			data.data = videobuf;

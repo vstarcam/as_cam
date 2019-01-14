@@ -73,6 +73,7 @@ public class VcmApi {
 
     public void load(final String url,final Object object,final ApiCallBack callBack){
         HttpHelper.signature= StringUtils.getSignature(GsonUtils.getJson(object));
+        Log.e("api",HttpHelper.signature);
         Log.e("api","GsonUtils.getJson(object)"+GsonUtils.getJson(object));
         HttpHelper.getInstance().post(url, GsonUtils.getJson(object), new BaseCallback() {
             @Override

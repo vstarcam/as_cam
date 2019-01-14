@@ -80,6 +80,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="5dp"
+                        android:textColor="@color/black"
                         android:layout_weight="1"
                         android:maxLength="64"
                         android:singleLine="true" />
@@ -115,6 +116,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="5dp"
+                        android:textColor="@color/color_black"
                         android:maxLength="20"
                         android:singleLine="true"
                         android:text="admin" />
@@ -150,6 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="5dp"
+                        android:textColor="@color/color_black"
                         android:maxLength="20"
                         android:password="true"
                         android:singleLine="true" >

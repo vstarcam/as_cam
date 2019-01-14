@@ -691,19 +691,19 @@ public class BridgeService extends Service
 	 * 录像回放参数回调
 	 */
 	public void CallBack_RecordSchParams(String did, int record_cover_enable,
-			int record_timer, int record_size, int record_time_enable,int record_chnl,
-			int record_schedule_sun_0, int record_schedule_sun_1,
-			int record_schedule_sun_2, int record_schedule_mon_0,
-			int record_schedule_mon_1, int record_schedule_mon_2,
-			int record_schedule_tue_0, int record_schedule_tue_1,
-			int record_schedule_tue_2, int record_schedule_wed_0,
-			int record_schedule_wed_1, int record_schedule_wed_2,
-			int record_schedule_thu_0, int record_schedule_thu_1,
-			int record_schedule_thu_2, int record_schedule_fri_0,
-			int record_schedule_fri_1, int record_schedule_fri_2,
-			int record_schedule_sat_0, int record_schedule_sat_1,
-			int record_schedule_sat_2, int record_sd_status, int sdtotal,
-			int sdfree,int enable_audio) {
+										 int record_timer, int record_size, int record_chnl,
+										 int record_time_enable, int record_schedule_sun_0,
+										 int record_schedule_sun_1, int record_schedule_sun_2,
+										 int record_schedule_mon_0, int record_schedule_mon_1,
+										 int record_schedule_mon_2, int record_schedule_tue_0,
+										 int record_schedule_tue_1, int record_schedule_tue_2,
+										 int record_schedule_wed_0, int record_schedule_wed_1,
+										 int record_schedule_wed_2, int record_schedule_thu_0,
+										 int record_schedule_thu_1, int record_schedule_thu_2,
+										 int record_schedule_fri_0, int record_schedule_fri_1,
+										 int record_schedule_fri_2, int record_schedule_sat_0,
+										 int record_schedule_sat_1, int record_schedule_sat_2,
+										 int record_sd_status, int sdtotal, int sdfree, int audio_enble)  {
 		if (sCardInterface != null) {
 			sCardInterface.callBackRecordSchParams(did, record_cover_enable,
 					record_timer, record_size, record_time_enable,
@@ -717,7 +717,7 @@ public class BridgeService extends Service
 					record_schedule_thu_2, record_schedule_fri_0,
 					record_schedule_fri_1, record_schedule_fri_2,
 					record_schedule_sat_0, record_schedule_sat_1,
-					record_schedule_sat_2, record_sd_status, sdtotal, sdfree,enable_audio);
+					record_schedule_sat_2, record_sd_status, sdtotal, sdfree,audio_enble);
 		}
 		Log.e(TAG, "录像计划:record_schedule_sun_0=" + record_schedule_sun_0
 				+ ",record_schedule_sun_1=" + record_schedule_sun_1
@@ -1281,7 +1281,7 @@ public class BridgeService extends Service
 	public void CallBack_TFCardPlayback(String did, byte[] yuv, int type,
 			int size,int width,int height, int timestamp,float pos,float cachePOS) {
 
-		Log.e("videodate brig","did"+did+"yuv"+yuv.length+"width"+width+"height"+height);
+		Log.e("videodate brig","did"+did+"yuv"+yuv.length+"width"+width+"height"+height + "timestamp"+timestamp);
 		if (playBackInterface != null) {
 			playBackInterface.callBackPlaybackVideoData(yuv, 1,
 					size, width, height,timestamp,type,0);
