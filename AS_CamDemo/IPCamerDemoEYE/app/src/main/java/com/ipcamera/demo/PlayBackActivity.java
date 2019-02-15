@@ -1,7 +1,12 @@
 package com.ipcamera.demo;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.TimeZone;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -39,6 +44,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.FrameLayout;
@@ -117,6 +123,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 			}
 			switch (msg.what) {
 			case 1: {// h264
+
 				textTimeStamp.setText(timeShow);
 				myRender.writeSample(videodata, nVideoWidth, nVideoHeight);
 				playImg.setVisibility(View.GONE);
@@ -345,7 +352,8 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		Log.d("getDataFromOther", "strDID:" + strDID);
 		Log.d("getDataFromOther", "strFilePath:" + strFilePath);
 	}
-
+	Boolean isTakepic = false;
+	private Button save;
 	private void findView() {
 		playImg = (ImageView) findViewById(R.id.playback_img);
 		layoutConnPrompt = (LinearLayout) findViewById(R.id.layout_connect_prompt);
@@ -354,6 +362,13 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		myGlSurfaceView = (GLSurfaceView) findViewById(R.id.myhsurfaceview);
 		myRender = new MyRender(myGlSurfaceView);
 		myGlSurfaceView.setRenderer(myRender);
+		save = (Button)findViewById(R.id.savepic);
+		save.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				isTakepic = true;
+			}
+		});
 	}
 
 	@Override
@@ -521,9 +536,83 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		}
 	}
 
+	// 拍照
+	private void takePicture(final Bitmap bmp) {
+		if (!isTakepic) {
+			isTakepic = true;
+			new Thread() {
+				public void run() {
+					savePicToSDcard(bmp);
+				}
+			}.start();
+		} else {
+			return;
+		}
+	}
+	/*
+	 * 保存到本地
+	 * 注意：此处可以做本地数据库sqlit 保存照片，以便于到本地照片观看界面从SQLite取出照片
+	 */
+	private int i=0;//拍照张数标志
+	private synchronized void savePicToSDcard(final Bitmap bmp) {
+		String strDate = getStrDate();
+		//String date = strDate.substring(0, 10);
+		FileOutputStream fos = null;
+		try {
+			File div = new File(Environment.getExternalStorageDirectory(),
+					"ipcamerademo/takepic");
+			if (!div.exists()) {
+				div.mkdirs();
+			}
+			++i;
+			Log.e("", i+"");
+			File file = new File(div, strDate + "_"+ strDID + "_"+ i +".jpg");
+			fos = new FileOutputStream(file);
+			if (bmp.compress(Bitmap.CompressFormat.JPEG, 100, fos))
+			{
+				fos.flush();
+				Log.d("tag", "takepicture success");
+				runOnUiThread(new Runnable() {
+
+					@Override
+					public void run() {
+						showToast(R.string.ptz_takepic_ok);
+					}
+				});
+			}
+		} catch (Exception e) {
+			runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					showToast(R.string.ptz_takepic_fail);
+				}
+			});
+			Log.d("tag", "exception:" + e.getMessage());
+			e.printStackTrace();
+		} finally {
+			isTakepic = false;
+			if (fos != null) {
+				try {
+					fos.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				fos = null;
+			}
+		}
+	}
+	//时间格式
+	private String getStrDate() {
+		Date d = new Date();
+		SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd_HH_mm");
+		String strDate = f.format(d);
+		return strDate;
+	}
+
+	private Bitmap mBmp;
 	@Override
 	public void callBackPlaybackVideoData(byte[] videobuf, int h264Data,
-			int len, int width, int height,int time,int frameType,int originframeLen) {
+			int len, final int width, final int height,int time,int frameType,int originframeLen) {
 		Log.e("videodate","h264Data"+h264Data+"fremetype"+frameType);
 		i1++;
 		if (exit == false) {
@@ -540,6 +629,22 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 		if(time >0)
 		timeShow = setDeviceTime(time1, tzStr);
 		if (h264Data == 1) { // H264
+
+			if (isTakepic && width > 0&& height >0&& frameType != 6) {
+				isTakepic = false;
+				Log.e("vst","nV"+height+width);
+
+
+						byte[] rgb = new byte[width * height * 2];
+						NativeCaller.YUV4202RGB565(videodata, rgb, width, height);
+						ByteBuffer buffer = ByteBuffer.wrap(rgb);
+						mBmp = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565);
+						mBmp.copyPixelsFromBuffer(buffer);
+						savePicToSDcard(mBmp);
+						//takePicture(mBmp);
+
+
+			}
 			mHandler.sendEmptyMessage(1);
 		} else { // MJPEG
 			mHandler.sendEmptyMessage(2);

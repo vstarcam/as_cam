@@ -2,6 +2,7 @@ package com.ipcamera.demo;
 
 import com.ipcamer.demo.R;
 import com.ipcamera.demo.utils.ContentCommon;
+import com.ipcamera.demo.utils.MySharedPreferenceUtil;
 import com.ipcamera.demo.utils.MyStringUtils;
 
 import vstc2.nativecaller.NativeCaller;
@@ -16,6 +17,7 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
+import com.ipcamera.demo.utils.MySharedPreferenceUtil;
 
 public class BridgeService extends Service
 {
@@ -1159,6 +1161,14 @@ public class BridgeService extends Service
 				&& cmd != ContentCommon.CGI_GET_SENSOR_STATUS)
 		{
 			sensorListInterfece.CallBackMessage(did, resultPbuf, cmd,sensorid1, sensorid2, sensorid3, sensortype, sensorstatus,presetid, index);
+		}
+		if(cmd == ContentCommon.CGI_IEGET_FACTORY)
+		{
+			if (resultPbuf.contains("correctModel=")) {
+				int num = resultPbuf.indexOf("correctModel=") + "correctModel=".length();
+				String correctModel = resultPbuf.substring(num, num + 1);
+				MySharedPreferenceUtil.saveDeviceInformation(this, did, ContentCommon.DEVICE_MODEL_TYPE, correctModel);
+			}
 		}
 
 	}

@@ -274,4 +274,7 @@ public class ContentCommon {
 	//
 	// #define CGI_IEGET_LIVESTREAM 0X6037
 
+	/** 设备 类型**/
+	public static final String DEVICE_MODEL_TYPE= "device_model_type";
+
 }

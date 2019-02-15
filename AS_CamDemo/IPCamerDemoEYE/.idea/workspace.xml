@@ -6,7 +6,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="h264Data == 0" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -27,7 +26,17 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="IPCamerDemoEYE" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -39,8 +48,8 @@
       <file leaf-file-name="AddCameraActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="150" column="144" lean-forward="true" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="144" />
+            <state relative-caret-position="6153">
+              <caret line="531" column="9" lean-forward="false" selection-start-line="531" selection-start-column="9" selection-end-line="531" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -57,37 +66,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>StopPlayBack</find>
+      <find>PlayBackMovePos</find>
       <find>SetPlayBackPos</find>
-      <find>playback_seekbar</find>
-      <find>playSeekBar</find>
-      <find>move_video</find>
-      <find>tv_add_move_plan</find>
-      <find>rl_add_move_plan</find>
-      <find>PPPPWifiSetting</find>
-      <find>AudioRecordData</find>
-      <find>【重要】</find>
-      <find>motion_push_plan2</find>
-      <find>PushTimingCallback</find>
-      <find>motion_push_plan8</find>
-      <find>SCameraSetPushVideoTiming</find>
-      <find>timing_save</find>
-      <find>pushplan</find>
-      <find>etRecord_time</find>
-      <find>Record_timer</find>
-      <find>Record_time_enable</find>
-      <find>playSurface</find>
-      <find>update</find>
-      <find>btn_video_pop</find>
+      <find>StrarRecordPlayBack</find>
+      <find>NativeCaller</find>
+      <find>oncreate</find>
+      <find>videobuf</find>
+      <find>mBmp</find>
+      <find>isTakepic</find>
+      <find>CallBack_TFCardPlayback</find>
+      <find>callBackPlaybackVideoData</find>
+      <find>savePicToSDcard</find>
+      <find>takePicture</find>
       <find>myRender</find>
-      <find>callBackRecordSchParams</find>
-      <find>record_time_enable</find>
-      <find>videodate</find>
-      <find>audioPlayer</find>
-      <find>AudioBuffer</find>
-      <find>oneFramesize</find>
-      <find>StartAudio</find>
-      <find>SettingActivity</find>
+      <find>MyRender</find>
+      <find>MySharedPreferenceUtil</find>
+      <find>PPPPCameraStatus</find>
+      <find>PPPPPTZControl</find>
+      <find>PPPPCameraControl</find>
+      <find>gt</find>
+      <find>scale</find>
+      <find>ControlDeviceTask</find>
+      <find>CustomVideoRecord</find>
+      <find>PlayVRActivity</find>
+      <find>playActivity</find>
+      <find>录像</find>
+      <find>myvideoRecorder</find>
+      <find>done</find>
+      <find>PlayActivity</find>
+      <find>61</find>
     </findStrings>
+    <replaceStrings>
+      <replace>PlayVRActivity</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
@@ -1910,21 +1922,23 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/StartActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/net/VcmApi.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/playback.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/CustomAudioRecorder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_camera.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/playback.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/CustomVideoRecord.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayVRActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="807" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -1941,7 +1955,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -1950,68 +1963,13 @@
               <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
               <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ipcamera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ipcamera" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2019,10 +1977,10 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547458505192" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550226124291" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1547438231683" />
-    <property name="device.picker.selection" value="4f39d589" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1550108656993" />
+    <property name="device.picker.selection" value="84B7N16506006261" />
     <property name="android.profiler.active" value="true" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.Flavors" value="" />
@@ -2030,7 +1988,7 @@
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-    <property name="DEBUGGABLE_DEVICE" value="oppo-a31-ed16a12" />
+    <property name="DEBUGGABLE_DEVICE" value="lemobile-le_x620-LE67A06190354316" />
     <property name="DEBUGGABLE_PROCESS" value="com.ipcamer.demo" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
@@ -2040,6 +1998,7 @@
       <recent name="com.ipcamera.demo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ipcamera.demo" />
       <recent name="com.ipcamera.demo.adapter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -2379,19 +2338,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="807" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="821" extended-state="0" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.026124818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30156472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37880987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27311522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48766327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53555876" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7380952" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2402,9 +2360,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32656023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3111588" sideWeight="0.4940476" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27682403" sideWeight="0.4940476" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018598" sideWeight="0.50595236" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Flutter Inspector" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2458,32 +2416,11 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/adapter/LocalPictureAndVideoAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-229">
-          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/LocalPictureAndVideoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="108" column="8" lean-forward="false" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-23/android.jar!/android/content/Context.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="146" column="24" lean-forward="false" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/bean/JsonBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2492,23 +2429,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/message_list_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_message.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/IpConnectActivity.java">
@@ -2522,7 +2459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2530,7 +2466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2561,23 +2496,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/play.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4035">
           <caret line="269" column="47" lean-forward="false" selection-start-line="269" selection-start-column="33" selection-end-line="269" selection-end-column="47" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ptz_resolution_h264.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ptz_resolution_h264.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values-zh-rCN/strings.xml">
@@ -2636,16 +2571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/playback.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackTFActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4413">
@@ -2657,18 +2582,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settingsdcard.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6480">
           <caret line="432" column="61" lean-forward="false" selection-start-line="432" selection-start-column="45" selection-end-line="432" selection-end-column="61" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/SettingWifiActivity.java">
@@ -2699,13 +2623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vstc2/nativecaller/NativeCaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/SensorTimeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2714,20 +2631,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/videotape_timing_setting.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="269" column="44" lean-forward="false" selection-start-line="269" selection-start-column="33" selection-end-line="269" selection-end-column="44" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/SCameraSetPlanVideoTiming.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6030">
           <caret line="440" column="45" lean-forward="false" selection-start-line="440" selection-start-column="24" selection-end-line="440" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2735,7 +2651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4440">
           <caret line="322" column="24" lean-forward="false" selection-start-line="322" selection-start-column="16" selection-end-line="322" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2743,7 +2658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7020">
           <caret line="500" column="39" lean-forward="false" selection-start-line="500" selection-start-column="39" selection-end-line="500" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2751,14 +2665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="305" column="3" lean-forward="true" selection-start-line="305" selection-start-column="3" selection-end-line="305" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5310">
-          <caret line="440" column="21" lean-forward="false" selection-start-line="440" selection-start-column="21" selection-end-line="440" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2770,26 +2676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="561" column="15" lean-forward="false" selection-start-line="561" selection-start-column="15" selection-end-line="561" selection-end-column="15" />
-          <folding>
-            <element signature="e#2816#2950#0" expanded="false" />
-            <element signature="e#2949#2950#0" expanded="false" />
-            <element signature="e#3016#4641#0" expanded="false" />
-            <element signature="e#4640#4641#0" expanded="false" />
-            <element signature="e#4714#5215#0" expanded="false" />
-            <element signature="e#5214#5215#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/CustomBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2797,85 +2687,286 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#550#551#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="1064" column="13" lean-forward="false" selection-start-line="1064" selection-start-column="13" selection-end-line="1064" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ip_connect.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1695">
           <caret line="113" column="40" lean-forward="false" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_camera.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_camera.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="154" column="62" lean-forward="false" selection-start-line="154" selection-start-column="62" selection-end-line="154" selection-end-column="62" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/setting.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
+      <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/SettingActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-23/android.jar!/android/graphics/Bitmap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+          <folding>
+            <marker date="1520696803030" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1520696803030" expanded="false" signature="140:315" ph="..." />
+            <marker date="1520696803030" expanded="false" signature="482:493" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="529:535" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="564:575" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="611:617" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="658:669" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="705:711" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="786:838" ph="{...}" />
+            <marker date="1520696803030" expanded="false" signature="875:886" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="922:928" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="967:978" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1014:1020" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="1069:1080" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1116:1122" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="1149:1160" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1196:1202" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="1241:1252" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1288:1294" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="1328:1339" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1375:1381" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="1429:1440" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1476:1482" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="1532:1543" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1579:1585" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="1651:1703" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="1806:1858" ph="{...}" />
+            <marker date="1520696803030" expanded="false" signature="1909:1920" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="1956:1962" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="2054:2106" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="2224:2276" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="2361:2413" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="2522:2574" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="2697:2749" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="2896:2948" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="3047:3099" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="3222:3274" ph="{...}" />
+            <marker date="1520696803030" expanded="false" signature="3313:3324" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="3360:3366" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="3460:3512" ph="{...}" />
+            <marker date="1520696803030" expanded="false" signature="3550:3561" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="3597:3603" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="3647:3658" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="3694:3700" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="3764:3816" ph="{...}" />
+            <marker date="1520696803030" expanded="false" signature="3849:3860" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="3896:3902" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="3936:3947" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="3983:3989" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4035:4046" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4082:4088" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4135:4146" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4182:4188" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4243:4254" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4290:4296" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4352:4363" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4399:4405" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4455:4466" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4502:4508" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4559:4570" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4606:4612" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4648:4659" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4695:4701" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4738:4749" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4785:4791" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4838:4849" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4885:4891" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="4935:4946" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="4982:4988" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="5025:5036" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="5072:5078" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="5125:5136" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="5172:5178" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="5216:5227" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="5263:5269" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="5324:5335" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="5371:5377" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="5412:5423" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="5459:5465" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="5504:5515" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="5551:5557" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="5660:5712" ph="{...}" />
+            <marker date="1520696803030" expanded="false" signature="5763:5774" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="5810:5816" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="5919:5971" ph="{...}" />
+            <marker date="1520696803030" expanded="false" signature="6006:6017" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="6053:6059" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="6111:6122" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="6158:6164" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="6198:6209" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="6245:6251" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="6312:6323" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="6359:6365" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="6406:6417" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="6453:6459" ph=" }" />
+            <marker date="1520696803030" expanded="false" signature="6492:6503" ph=" { " />
+            <marker date="1520696803030" expanded="false" signature="6539:6545" ph=" }" />
+            <marker date="1520696803030" expanded="true" signature="6585:6679" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="6662:6673" ph="{}" />
+            <marker date="1520696803030" expanded="true" signature="6711:6828" ph="{...}" />
+            <marker date="1520696803030" expanded="true" signature="6811:6822" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/playback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="643" column="44" lean-forward="false" selection-start-line="643" selection-start-column="44" selection-end-line="643" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/vstc2/nativecaller/NativeCaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/CustomVideoRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayVRActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3503">
+          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#7304#7343#0" expanded="false" />
+            <element signature="e#7350#7393#0" expanded="false" />
+            <element signature="e#7417#7436#0" expanded="false" />
+            <element signature="e#7467#7482#0" expanded="false" />
+            <element signature="e#7488#7764#0" expanded="false" />
+            <element signature="e#7763#7764#0" expanded="false" />
+            <element signature="e#7795#7814#0" expanded="false" />
+            <element signature="e#8160#9184#0" expanded="false" />
+            <element signature="e#9183#9184#0" expanded="false" />
+            <element signature="e#9382#9415#0" expanded="false" />
+            <element signature="e#9802#16091#0" expanded="false" />
+            <element signature="e#9997#10017#0" expanded="false" />
+            <element signature="e#16090#16091#0" expanded="false" />
+            <element signature="e#16253#16504#0" expanded="false" />
+            <element signature="e#16411#16442#0" expanded="false" />
+            <element signature="e#16503#16504#0" expanded="false" />
+            <element signature="e#18146#18169#0" expanded="false" />
+            <element signature="e#18449#18472#0" expanded="false" />
+            <element signature="e#34351#34352#0" expanded="false" />
+            <element signature="e#34398#34399#0" expanded="false" />
+            <element signature="e#34429#34430#0" expanded="false" />
+            <element signature="e#34464#34465#0" expanded="false" />
+            <element signature="e#36637#36638#0" expanded="false" />
+            <element signature="e#36656#36657#0" expanded="false" />
+            <element signature="e#36848#36892#0" expanded="false" />
+            <element signature="e#36916#36939#0" expanded="false" />
+            <element signature="e#36970#36985#0" expanded="false" />
+            <element signature="e#36991#37147#0" expanded="false" />
+            <element signature="e#37146#37147#0" expanded="false" />
+            <element signature="e#37178#37197#0" expanded="false" />
+            <element signature="e#37426#37450#0" expanded="false" />
+            <element signature="e#39627#39657#0" expanded="false" />
+            <element signature="e#44090#44104#0" expanded="false" />
+            <element signature="e#44186#44199#0" expanded="false" />
+            <element signature="e#44278#44289#0" expanded="false" />
+            <element signature="e#44370#44383#0" expanded="false" />
+            <element signature="e#55277#55300#0" expanded="false" />
+            <element signature="e#55436#55461#0" expanded="false" />
+            <element signature="e#56024#56050#0" expanded="false" />
+            <element signature="e#56447#56475#0" expanded="false" />
+            <element signature="e#57023#57049#0" expanded="false" />
+            <element signature="e#68757#68758#0" expanded="false" />
+            <element signature="e#68798#68799#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="59" selection-end-line="95" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="150" column="144" lean-forward="true" selection-start-line="150" selection-start-column="49" selection-end-line="150" selection-end-column="144" />
+        <state relative-caret-position="6153">
+          <caret line="531" column="9" lean-forward="false" selection-start-line="531" selection-start-column="9" selection-end-line="531" selection-end-column="9" />
           <folding />
         </state>
       </provider>

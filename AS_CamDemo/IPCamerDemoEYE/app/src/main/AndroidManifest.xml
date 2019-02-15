@@ -90,7 +90,13 @@
         <activity
             android:name="com.ipcamera.demo.PlayActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="play"></activity>
+            android:label="play">
+        </activity>
+        <activity
+            android:name="com.ipcamera.demo.PlayVRActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="play">
+        </activity>
         <activity
             android:name="com.ipcamera.demo.SettingWifiActivity"
             android:configChanges="keyboardHidden|orientation"

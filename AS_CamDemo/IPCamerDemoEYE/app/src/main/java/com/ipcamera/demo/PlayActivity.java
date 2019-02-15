@@ -80,7 +80,7 @@ import com.ipcamera.demo.utils.CustomAudioRecorder.AudioRecordResult;
 import com.ipcamera.demo.utils.CustomBuffer;
 import com.ipcamera.demo.utils.CustomBufferData;
 import com.ipcamera.demo.utils.CustomBufferHead;
-import com.ipcamera.demo.utils.CustomVideoRecord;
+
 import com.ipcamera.demo.utils.MyRender;
 import com.ipcamera.demo.utils.SystemValue;
 
@@ -175,7 +175,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 	private boolean isTalking = false;//是否在说话
 	private boolean isMcriophone = false;//是否在
 	//视频录像方法
-	private CustomVideoRecord myvideoRecorder;
+	//private CustomVideoRecord myvideoRecorder;
 	public boolean isH264 = false;//是否是H264格式标志
 	public boolean isJpeg=false;
 	private boolean isTakeVideo = false;
@@ -196,6 +196,8 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 	//镜像标志
 	private boolean m_bUpDownMirror;
 	private boolean m_bLeftRightMirror;
+
+	private Button save;
 
 
 	private int i=0;//拍照张数标志
@@ -549,7 +551,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		AudioBuffer = new CustomBuffer();
 		audioPlayer = new AudioPlayer(AudioBuffer);
 		customAudioRecorder=new CustomAudioRecorder(this);
-		myvideoRecorder = new CustomVideoRecord(this, strDID);
+		//myvideoRecorder = new CustomVideoRecord(this, strDID);
 		BridgeService.setPlayInterface(this);
 		NativeCaller.StartPPPPLivestream(strDID, 10, 1);//确保不能重复start
 
@@ -565,6 +567,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		
 		myRender = new MyRender(playSurface);
 		playSurface.setRenderer(myRender);
+
 
 	}
 	
@@ -1626,7 +1629,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			NativeCaller.RecordLocal(strDID,strRecord,0);
 			isTakeVideo = false;
 			ptzTake_vodeo.setImageResource(R.drawable.ptz_takevideo);
-			myvideoRecorder.stopRecordVideo();
+			//myvideoRecorder.stopRecordVideo();
 		} else {
 			isTakeVideo = true;
 			showToast(R.string.ptz_takevideo_begin);
@@ -1651,7 +1654,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			Log.d("tag", "停止录像");
 			isTakeVideo = false;
 			// cameratakevideo.stopRecordVideo(strDID);
-			myvideoRecorder.stopRecordVideo();
+			//myvideoRecorder.stopRecordVideo();
 		}
 	}
 	//讲话

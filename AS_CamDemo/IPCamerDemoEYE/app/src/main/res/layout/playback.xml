@@ -73,4 +73,14 @@
             android:text="@string/connecting" />
     </LinearLayout>
 
+
+    <Button
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:id="@+id/savepic"/>
+
+
 </RelativeLayout>

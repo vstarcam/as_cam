@@ -37,6 +37,7 @@ import com.ipcamera.demo.BridgeService.CallBackMessageInterface;
 import com.ipcamera.demo.BridgeService.IpcamClientInterface;
 import com.ipcamera.demo.adapter.SearchListAdapter;
 import com.ipcamera.demo.utils.ContentCommon;
+import com.ipcamera.demo.utils.MySharedPreferenceUtil;
 import com.ipcamera.demo.utils.SystemValue;
 
 public class AddCameraActivity extends Activity implements OnClickListener,AddCameraInterface
@@ -379,6 +380,13 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		switch (v.getId()) {
 		case R.id.play:
 			Intent intent = new Intent(AddCameraActivity.this,PlayActivity.class);
+			if(MySharedPreferenceUtil.getDeviceInformation(this,SystemValue.deviceId,ContentCommon.DEVICE_MODEL_TYPE).equals("1")||MySharedPreferenceUtil.getDeviceInformation(this,SystemValue.deviceId,ContentCommon.DEVICE_MODEL_TYPE).equals("2"))
+			{
+				intent = new Intent(AddCameraActivity.this,PlayVRActivity.class);
+			}else
+			{
+
+			}
 			startActivity(intent);
 			break;
 		case R.id.setting:
@@ -522,7 +530,6 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 					getResources().getString(R.string.input_camera_id), Toast.LENGTH_SHORT).show();
 			return;
 		}
-
 		if (strUser.length() == 0)
 		{
 			Toast.makeText(AddCameraActivity.this,
@@ -648,7 +655,10 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 				}
 				textView_top_show.setText(getResources().getString(resid));
 				if (msgParam == ContentCommon.PPPP_STATUS_ON_LINE) {
-					NativeCaller.PPPPGetSystemParams(did,ContentCommon.MSG_TYPE_GET_PARAMS);
+					NativeCaller.PPPPGetSystemParams(did, ContentCommon.MSG_TYPE_GET_PARAMS);
+					NativeCaller.TransferMessage(did,
+							"get_factory_param.cgi?loginuse=admin&loginpas="
+									+ SystemValue.devicePass + "&user=admin&pwd=" + SystemValue.devicePass, 1);// 检测push值
 				}
 				if (msgParam == ContentCommon.PPPP_STATUS_INVALID_ID
 						|| msgParam == ContentCommon.PPPP_STATUS_CONNECT_FAILED
