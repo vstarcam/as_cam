@@ -174,8 +174,6 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 	private boolean isPictSave = false;
 	private boolean isTalking = false;//是否在说话
 	private boolean isMcriophone = false;//是否在
-	//视频录像方法
-	//private CustomVideoRecord myvideoRecorder;
 	public boolean isH264 = false;//是否是H264格式标志
 	public boolean isJpeg=false;
 	private boolean isTakeVideo = false;
@@ -551,7 +549,6 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		AudioBuffer = new CustomBuffer();
 		audioPlayer = new AudioPlayer(AudioBuffer);
 		customAudioRecorder=new CustomAudioRecorder(this);
-		//myvideoRecorder = new CustomVideoRecord(this, strDID);
 		BridgeService.setPlayInterface(this);
 		NativeCaller.StartPPPPLivestream(strDID, 10, 1);//确保不能重复start
 
@@ -1629,7 +1626,6 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			NativeCaller.RecordLocal(strDID,strRecord,0);
 			isTakeVideo = false;
 			ptzTake_vodeo.setImageResource(R.drawable.ptz_takevideo);
-			//myvideoRecorder.stopRecordVideo();
 		} else {
 			isTakeVideo = true;
 			showToast(R.string.ptz_takevideo_begin);
@@ -1654,7 +1650,6 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			Log.d("tag", "停止录像");
 			isTakeVideo = false;
 			// cameratakevideo.stopRecordVideo(strDID);
-			//myvideoRecorder.stopRecordVideo();
 		}
 	}
 	//讲话

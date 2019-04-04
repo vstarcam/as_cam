@@ -678,17 +678,17 @@ public class PlayVRActivity extends Activity implements OnTouchListener,OnGestur
 
 			if(MySharedPreferenceUtil.getDeviceInformation(this,strDID,ContentCommon.DEVICE_MODEL_TYPE).equals("1"))
 			{
-				Fisheye60API = new Fisheye60Render("111",glView,Fisheye60Render.DEVICE_TYPEC60);
+				Fisheye60API = new Fisheye60Render(strDID,glView,Fisheye60Render.DEVICE_TYPEC60);
 				glView.setRenderer(Fisheye60API);
 			}else if(MySharedPreferenceUtil.getDeviceInformation(this,strDID,ContentCommon.DEVICE_MODEL_TYPE).equals("2"))
 			{
-				Fisheye61API = new Fisheye61Render("111",glView);
+				Fisheye61API = new Fisheye61Render(strDID,glView);
 				glView.setRenderer(Fisheye61API);
 			}else{
 
 				// myRender = new MyRender(playSurface);
 				//playSurface.setRenderer(myRender);
-				cameraRender = new CameraRender("111",glView);
+				cameraRender = new CameraRender(strDID,glView);
 				glView.setRenderer(cameraRender);
 			}
 

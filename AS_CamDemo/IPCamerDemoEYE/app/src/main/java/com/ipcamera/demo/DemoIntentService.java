@@ -12,6 +12,7 @@ import com.igexin.sdk.PushManager;
 import com.igexin.sdk.message.BindAliasCmdMessage;
 import com.igexin.sdk.message.FeedbackCmdMessage;
 import com.igexin.sdk.message.GTCmdMessage;
+import com.igexin.sdk.message.GTNotificationMessage;
 import com.igexin.sdk.message.GTTransmitMessage;
 import com.igexin.sdk.message.SetTagCmdMessage;
 import com.igexin.sdk.message.UnBindAliasCmdMessage;
@@ -111,6 +112,16 @@ public class DemoIntentService extends GTIntentService {
         } else if ((action == PushConsts.THIRDPART_FEEDBACK)) {
             feedbackResult((FeedbackCmdMessage) cmdMessage);
         }
+    }
+
+    @Override
+    public void onNotificationMessageArrived(Context context, GTNotificationMessage gtNotificationMessage) {
+
+    }
+
+    @Override
+    public void onNotificationMessageClicked(Context context, GTNotificationMessage gtNotificationMessage) {
+
     }
 
     private void setTagResult(SetTagCmdMessage setTagCmdMsg) {

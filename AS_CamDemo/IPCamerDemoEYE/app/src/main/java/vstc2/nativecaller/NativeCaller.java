@@ -5,7 +5,7 @@ import android.content.Context;
 
 public class NativeCaller {
 	static {
-		System.loadLibrary("ijkffmpeg");
+
 		System.loadLibrary("vstc2_jni");
 	}
 
@@ -30,8 +30,6 @@ public class NativeCaller {
 			int defense_plan21,int remind_rate);
 
 	public native static int RecordLocal(String uid, String path, int bRecordLocal); // 0解码后的数据，1全部数据
-
-	//public native static int RecordLocal(String uid, int bRecordLocal); // 0解码后的数据，1全部数据
 
 	public native static int PPPPCameraStatus(String did, int bEnableLanSearch);// 第一个参数传入UID，第二个参数传
 																				// 0x7F。通过返回值即可获得该UID在线状态
