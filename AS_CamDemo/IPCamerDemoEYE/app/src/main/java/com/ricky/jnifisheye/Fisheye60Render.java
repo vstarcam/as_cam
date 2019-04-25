@@ -88,6 +88,9 @@ public class Fisheye60Render implements GLSurfaceView.Renderer{
         if (renderPtr == 0) {
             return;
         }
+        
+        if(data == null || nW < 500 || nH < 500)
+            return;
 
         FisheyeAPI.Display(renderPtr,data,nW, nH);
         mTargetSurface.requestRender();
