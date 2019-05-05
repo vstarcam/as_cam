@@ -12,9 +12,9 @@ import okhttp3.Request;
 
 
 /*
- * 编写：wenlong on 2017/9/28 17:37
- * 企业QQ： 2853239883
- * 钉钉：13430330686
+ * 编写：vst  on 2017/9/28 17:37
+ * //
+ * //
  */
 public class VcmApi {
     private static VcmApi api;

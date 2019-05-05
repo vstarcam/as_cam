@@ -283,6 +283,20 @@
                     android:layout_marginRight="5dp"
                     android:background="@drawable/ptz_default_set_selector"
                     android:src="@drawable/ptz_resolution_preset" />
+
+			<ImageButton
+				android:id="@+id/light"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:layout_marginRight="5dp"
+				 />
+
+			<ImageButton
+				android:id="@+id/sire"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:layout_marginRight="5dp"
+				/>
 	          
 	    </LinearLayout>
     </HorizontalScrollView>

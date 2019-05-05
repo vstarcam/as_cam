@@ -82,10 +82,10 @@ import com.ipcamera.demo.utils.CustomBufferData;
 import com.ipcamera.demo.utils.CustomBufferHead;
 
 import com.ipcamera.demo.utils.MyRender;
+import com.ipcamera.demo.utils.MySharedPreferenceUtil;
 import com.ipcamera.demo.utils.SystemValue;
 
-public class PlayActivity extends Activity implements OnTouchListener,OnGestureListener, OnClickListener, PlayInterface ,AudioRecordResult
-{
+public class PlayActivity extends Activity implements OnTouchListener,OnGestureListener, OnClickListener, PlayInterface ,AudioRecordResult ,BridgeService.CameraLightInterfaceInterface{
 
 	private static final String LOG_TAG = "PlayActivity";
 	private static final int AUDIO_BUFFER_START_CODE = 0xff00ff;
@@ -122,12 +122,9 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 
 	private boolean isLeftRight = false;
 	private boolean isUpDown = false;
-	
-	
-	private boolean isHorizontalMirror = false;
-	private boolean isVerticalMirror = false;
+
 	private boolean isUpDownPressed = false;
-	private boolean isShowtoping = false;
+	private boolean isShowtoping = true;
 	private ImageView videoViewPortrait;
 	private ImageView videoViewStandard;
 	//顶部控件声明
@@ -196,6 +193,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 	private boolean m_bLeftRightMirror;
 
 	private Button save;
+	private  ImageButton lightBtn,sireBtn;
 
 
 	private int i=0;//拍照张数标志
@@ -268,6 +266,18 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 				 ptzVertMirror2.setImageResource(R.drawable.ptz_vert_mirror_press);
 				 ptzHoriMirror2.setImageResource(R.drawable.ptz_hori_mirror_press);
 				 break;
+			 case 11:
+					lightBtn.setBackground(getResources().getDrawable(R.drawable.camera_light_btn_off));
+					break;
+				case 12:
+					lightBtn.setBackground(getResources().getDrawable(R.drawable.camera_light_btn_on));
+					break;
+				case 13:
+					sireBtn.setBackground(getResources().getDrawable(R.drawable.camera_siren_btn_off));
+					break;
+				case 14:
+					sireBtn.setBackground(getResources().getDrawable(R.drawable.camera_siren_btn_on));
+					break;
 			 default:				 
 				 break;
 			}
@@ -544,6 +554,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		setContentView(R.layout.play);
 		strName = SystemValue.deviceName;
 		strDID = SystemValue.deviceId;
+		BridgeService.setCameraLightInterfaceInterface( PlayActivity.this);
 		disPlaywidth = getWindowManager().getDefaultDisplay().getWidth();
 		findView();
 		AudioBuffer = new CustomBuffer();
@@ -565,7 +576,19 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		myRender = new MyRender(playSurface);
 		playSurface.setRenderer(myRender);
 
+		showTop();
+		showBottom();
 
+		//灯与警笛
+		if(SystemValue.supportLightAndSirenO13AndO10(MySharedPreferenceUtil.getSystemVer(this,strDID)))
+		{
+			getLightAndSirenStatte(strDID,SystemValue.devicePass);
+			lightBtn.setVisibility(View.VISIBLE);
+			sireBtn.setVisibility(View.VISIBLE);
+		}else {
+			lightBtn.setVisibility(View.GONE);
+			sireBtn.setVisibility(View.GONE);
+		}
 	}
 	
 	@Override
@@ -578,7 +601,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		{
 			resolutionPopWindow.dismiss();
 		}
-		if (keyCode == KeyEvent.KEYCODE_BACK)
+		if (keyCode == KeyEvent.KEYCODE_MENU)
 		{
 			if (!bProgress)
 			{
@@ -604,7 +627,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			}
 			return true;
 		}
-		if (keyCode == KeyEvent.KEYCODE_MENU) 
+		if (keyCode == KeyEvent.KEYCODE_BACK)
 		{
 			if (!bProgress) {
 				showTop();
@@ -667,6 +690,9 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		ptzContrast = (ImageButton) findViewById(R.id.ptz_contrast);
 		ptzResolutoin = (ImageButton) findViewById(R.id.ptz_resolution);
 		preset=(ImageButton) findViewById(R.id.preset);
+
+		lightBtn = (ImageButton)findViewById(R.id.light);
+		sireBtn = (ImageButton)findViewById(R.id.sire);
 		
 		ptztalk.setOnClickListener(this);
 		ptzAudio.setOnClickListener(this);
@@ -677,6 +703,9 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		ptzResolutoin.setOnClickListener(this);
 		ptzDefaultSet.setOnClickListener(this);
 		preset.setOnClickListener(this);
+		lightBtn.setOnClickListener(this);
+		sireBtn.setOnClickListener(this);
+
 		
 		
 		Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
@@ -752,19 +781,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 					mode = ZOOM;
 				}*/
 				break;
-	
-			case MotionEvent.ACTION_MOVE:
-				x2 = event.getX();
-				y2 = event.getY();
-	
-				if (mode == ZOOM) {
-					//float newDist = spacing(event);
-					//if (newDist > 0f)
-					//{
 
-
-				//}
-			}
 		}
 
 		return gt.onTouchEvent(event);
@@ -1164,7 +1181,43 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 				Toast.makeText(PlayActivity.this,"IR关", 500).show();
 			}
 			break;
+		case R.id.light:
+				if(isOpen)
+				{
+					setLightState(strDID,SystemValue.devicePass,false);
+					lightBtn.setBackground(getResources().getDrawable(R.drawable.camera_light_btn_off));
+
+				}else
+				{
+					setLightState(strDID,SystemValue.devicePass,true);
+					lightBtn.setBackground(getResources().getDrawable(R.drawable.camera_light_btn_on));
+				}
+				isOpen = !isOpen;
+			break;
+		case R.id.sire:
+				if(isOpenSire)
+				{
+					setSireState(strDID,SystemValue.devicePass,false);
+					sireBtn.setBackground(getResources().getDrawable(R.drawable.camera_siren_btn_off));
+
+				}else
+				{
+					setSireState(strDID,SystemValue.devicePass,true);
+					sireBtn.setBackground(getResources().getDrawable(R.drawable.camera_siren_btn_on));
+				}
+				isOpenSire = !isOpenSire;
+			break;
 		}
+	}
+
+	boolean isOpen = false;
+	boolean isOpenSire = false;
+	public static void setLightState(String did, String pwd, boolean isOpen) {
+		NativeCaller.TransferMessage(did, "trans_cmd_string.cgi?cmd=2109&command=0&light=" + (isOpen ? 1 : 0) + "&loginuse=admin&loginpas=" + pwd + "&user=admin&pwd=" + pwd, 1);
+	}
+
+	public static void setSireState(String did, String pwd, boolean isOpen) {
+		NativeCaller.TransferMessage(did, "trans_cmd_string.cgi?cmd=2109&command=0&siren=" + (isOpen ? 1 : 0) + "&loginuse=admin&loginpas=" + pwd + "&user=admin&pwd=" + pwd, 1);
 	}
 
 	private void dismissBrightAndContrastProgress() {
@@ -1185,6 +1238,35 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			bottomView.setVisibility(View.VISIBLE);
 		}
 	}
+
+	@Override
+	public void LightSireCallBack(String did, String command, String cmd, String siren, String light) {
+		if(!did.equals(strDID))
+		{
+			return;
+		}
+		if(light.equals("0"))
+		{
+			isOpen = false;
+			deviceParamsHandler.sendEmptyMessage(11);
+
+		}else
+		{
+			deviceParamsHandler.sendEmptyMessage(12);
+			isOpen = true;
+		}
+		if(siren.equals("0"))
+		{
+			isOpenSire = false;
+			deviceParamsHandler.sendEmptyMessage(13);
+		}else
+		{
+			isOpenSire = true;
+			deviceParamsHandler.sendEmptyMessage(14);
+		}
+	}
+
+
 	/*
 	 *异步控制方向
 	 */
@@ -2101,4 +2183,16 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		{
 			abstract public void VideoRecordData(int type, byte[] videodata,int width, int height, int time);
 		}
+
+
+
+	/**
+	 * 获取警笛和白光状态
+	 *
+	 * @param did
+	 * @param pwd
+	 */
+	public static void getLightAndSirenStatte(String did, String pwd) {
+		NativeCaller.TransferMessage(did, "trans_cmd_string.cgi?cmd=2109&command=2" + "&loginuse=" + "admin" + "&loginpas=" + pwd, 1);
+	}
 }

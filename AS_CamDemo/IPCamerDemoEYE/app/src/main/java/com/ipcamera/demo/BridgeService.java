@@ -432,6 +432,53 @@ public class BridgeService extends Service
 			}
 			return;
 		}
+		if (cmd.equals("2108")) {
+			try {
+				String command = MyStringUtils.spitValue(cgi_str, "command=");
+
+				if (command.equals("-1")) return;
+				if (command.equals("0")||command.equals("1")) {
+					String sirenMode = MyStringUtils.spitValue(cgi_str, "sirenMode=");
+					String lightMode=  MyStringUtils.spitValue(cgi_str, "lightMode=");
+					if (mLowPwerInterface != null) {
+						mLowPwerInterface.LowPwerCallBack(did, cmd, command, sirenMode+lightMode);
+					}
+					if (mLowPwerInterfaceForIndexCgiHelper!=null){
+						mLowPwerInterfaceForIndexCgiHelper.LowPwerCallBack(did, cmd, command, sirenMode,lightMode);
+					}
+				}
+
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return;
+		}
+
+        if (cmd.equals("2109")) {
+            try {
+                if (mCameraLightInterface != null) {
+                    String command = MyStringUtils.spitValue(cgi_str, "command=");
+
+                    if (command.equals("2")){
+                        String sirenStatus = MyStringUtils.spitValue(cgi_str, "sirenStatus=");
+                        String lightStatus =  MyStringUtils.spitValue(cgi_str, "lightStatus=");
+						mCameraLightInterface.LightSireCallBack(did, cmd, command, sirenStatus,lightStatus);
+                        //   mLowPwerInterface.LowPwerCallBack(did, cmd, command, content);
+                    }else if (command.equals("0")){
+                        String sirenStatus= MyStringUtils.spitValue(cgi_str, "siren=");
+                        String lightStatus =MyStringUtils.spitValue(cgi_str, "light=");
+                        if (command.equals("-1")) return;
+                        mLowPwerInterfaceForIndexCgiHelper.LowPwerCallBack(did, cmd, command, sirenStatus,lightStatus);
+                        //   mLowPwerInterface.LowPwerCallBack(did, cmd, command, content);
+                    }
+
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return;
+        }
 
 	}
 
@@ -758,6 +805,35 @@ public class BridgeService extends Service
 		notifyManager.notify(1, mNotify2);
 		return mNotify2;*//*
 	}*/
+
+	public static LowPwerInterface mLowPwerInterface;
+	public static LowPwerInterface mLowPwerInterfaceForLightLevel;
+	public static LowPwerInterface2109 mLowPwerInterfaceForIndexCgiHelper;
+	public static void setLowPwerInterface(LowPwerInterface2109 lowPwerInterface){
+		mLowPwerInterfaceForIndexCgiHelper=lowPwerInterface;
+	}
+
+	public static void setLowPwerInterfaceForLightLevel(LowPwerInterface lowPwerInterface){
+		mLowPwerInterfaceForLightLevel=lowPwerInterface;
+	}
+	public interface LowPwerInterface {
+		void LowPwerCallBack(String did, String command, String cmd, String content);
+	}
+
+	public interface LowPwerInterface2109 {
+		void LowPwerCallBack(String did, String command, String cmd, String siren,String light);
+	}
+
+	public static CameraLightInterfaceInterface mCameraLightInterface;
+
+	public interface CameraLightInterfaceInterface {
+		void LightSireCallBack(String did, String command, String cmd, String siren,String light);
+	}
+
+	public static void setCameraLightInterfaceInterface(CameraLightInterfaceInterface cameraLightInterfaceInterface){
+		mCameraLightInterface = cameraLightInterfaceInterface;
+	}
+
 
 	private static IpcamClientInterface ipcamClientInterface;
 	public static void setIpcamClientInterface(IpcamClientInterface ipcInterface)

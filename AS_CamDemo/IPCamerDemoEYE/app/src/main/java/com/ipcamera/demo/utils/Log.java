@@ -1,9 +1,9 @@
 package com.ipcamera.demo.utils;
 
 /*
- * 编写：wenlong on 2017/9/28 17:04
- * 企业QQ： 2853239883
- * 钉钉：13430330686
+ * 编写：vst  on 2017/9/28 17:04
+ * //
+ * //
  */
 public class Log {
     public static boolean isDebug=true;

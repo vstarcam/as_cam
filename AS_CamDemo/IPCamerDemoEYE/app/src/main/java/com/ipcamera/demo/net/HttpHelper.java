@@ -19,9 +19,9 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 /*
- * 编写：wenlong on 2017/9/28 16:39
- * 企业QQ： 2853239883
- * 钉钉：13430330686
+ * 编写：vst  on 2017/9/28 16:39
+ * //
+ * //
  */
 public class HttpHelper {
     public static final String TAG = "OkHttpHelper";

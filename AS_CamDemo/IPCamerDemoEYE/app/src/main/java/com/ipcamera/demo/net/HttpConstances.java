@@ -1,9 +1,9 @@
 package com.ipcamera.demo.net;
 
 /*
- * 编写：wenlong on 2017/10/30 17:39
- * 企业QQ： 2853239883
- * 钉钉：13430330686
+ * 编写：vst  on 2017/10/30 17:39
+ * //
+ * //
  */
 public class HttpConstances {
     //public static final String BASE_SERVICE_URL = "https://api.eye4.cn";  //正式 http://push2.eye4.cn:3000/binding

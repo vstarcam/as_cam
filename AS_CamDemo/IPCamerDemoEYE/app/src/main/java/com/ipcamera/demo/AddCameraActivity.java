@@ -1,5 +1,6 @@
 package com.ipcamera.demo;
 
+import java.io.File;
 import java.util.Map;
 import java.util.TimerTask;
 
@@ -16,6 +17,7 @@ import android.content.IntentFilter;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -38,6 +40,7 @@ import com.ipcamera.demo.BridgeService.IpcamClientInterface;
 import com.ipcamera.demo.adapter.SearchListAdapter;
 import com.ipcamera.demo.utils.ContentCommon;
 import com.ipcamera.demo.utils.MySharedPreferenceUtil;
+import com.ipcamera.demo.utils.MyStringUtils;
 import com.ipcamera.demo.utils.SystemValue;
 
 public class AddCameraActivity extends Activity implements OnClickListener,AddCameraInterface
@@ -189,6 +192,8 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		filter.addAction("finish");
 		registerReceiver(receiver, filter);
 		intentbrod = new Intent("drop");
+		Log.e("vst","encry==="+NativeCaller.DeviceEncryptStr("12345678","12345678"));
+		//NativeCaller.DeviceEncryptStr("12345678","12345678");
 	}
 
 	@Override
@@ -408,15 +413,12 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		case R.id.location_pics_videos://本地视频图像
 			if(SystemValue.deviceId!=null)
 			{
-				Intent intent1 = new Intent(AddCameraActivity.this,LocalPictureAndVideoActivity.class);
-				intent1.putExtra(ContentCommon.STR_CAMERA_ID,
-						SystemValue.deviceId);
-				intent1.putExtra(ContentCommon.STR_CAMERA_NAME,
-						SystemValue.deviceName);
-				intent1.putExtra(ContentCommon.STR_CAMERA_PWD, SystemValue.devicePass);
-				startActivity(intent1);
-				overridePendingTransition(R.anim.in_from_right,
-						R.anim.out_to_left);
+				File div = new File(Environment.getExternalStorageDirectory(),
+						"ipcamerademo/takepic");
+				if (!div.exists()) {
+					div.mkdirs();
+				}
+				Toast.makeText(AddCameraActivity.this,"保存在"+div.getAbsolutePath(), Toast.LENGTH_SHORT).show();
 			}else{
 				Toast.makeText(AddCameraActivity.this,"请确认是否选择设备", Toast.LENGTH_SHORT).show();
 			}
@@ -729,6 +731,9 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		// TODO Auto-generated method stub
 		if (cmd == ContentCommon.CGI_IEGET_STATUS) {
 			String cameraType = spitValue(resultPbuf, "upnp_status=");
+
+			String cameraSysver = MyStringUtils.spitValue(resultPbuf, "sys_ver=");
+			MySharedPreferenceUtil.saveSystemVer(AddCameraActivity.this, did, cameraSysver);
 			int intType = Integer.parseInt(cameraType);
 			int type14 = (int) (intType >> 16) & 1;// 14位 来判断是否报警联动摄像机
 			if (intType == 2147483647) {// 特殊值

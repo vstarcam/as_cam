@@ -1,9 +1,9 @@
 package com.ipcamera.demo.bean;
 
 /*
- * 编写：wenlong on 2017/10/30 17:22
- * 企业QQ： 2853239883
- * 钉钉：13430330686
+ * 编写：vst  on 2017/10/30 17:22
+ * //
+ * //
  */
 public class PushBindDeviceBean {
     private String uid;

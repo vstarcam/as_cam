@@ -1,9 +1,9 @@
 package com.ipcamera.demo.bean;
 
 /*
- * 编写：wenlong on 2017/9/29 10:15
- * 企业QQ： 2853239883
- * 钉钉：13430330686
+ * 编写：vst  on 2017/9/29 10:15
+ * //
+ * //
  */
 public class ErrorBean {
     private int errorCode;

@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Random;
 
 /*
- * 编写：wenlong on 2017/9/30 14:51
- * 企业QQ： 2853239883
- * 钉钉：13430330686
+ * 编写：vst  on 2017/9/30 14:51
+ * //
+ * //
  */
 public class StringUtils {
     public static String getEncryp(String clientCode,String date,String ran){
