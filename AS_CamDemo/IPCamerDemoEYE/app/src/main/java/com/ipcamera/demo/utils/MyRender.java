@@ -305,7 +305,7 @@ public class MyRender implements Renderer
     return 0;
   }
 
-  public int writeSample(byte[] paramArrayOfByte, int width, int height)
+  public int writeSample(byte[] paramArrayOfByte,int mSize ,int width,int height)
   {
 	synchronized (this) {
 		if ((width == 0) || (height == 0)){

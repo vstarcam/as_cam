@@ -325,7 +325,7 @@ public class ShowLocalVideoActivity extends BaseActivity implements
 									if (result > 0) {
 										int width = wAndh[0];
 										int height = wAndh[1];
-										myRender.writeSample(yuvbuff, width,
+										myRender.writeSample(yuvbuff,yuvbuff.length, width,
 												height);
 										int comsumeTime = (int) ((new Date()
 												.getTime() - startTiem));// 解码播放完一帧的时间

@@ -84,6 +84,7 @@ import com.ipcamera.demo.utils.CustomBufferHead;
 import com.ipcamera.demo.utils.MyRender;
 import com.ipcamera.demo.utils.MySharedPreferenceUtil;
 import com.ipcamera.demo.utils.SystemValue;
+import com.ipcamera.demo.utils.VideoFramePool;
 
 public class PlayActivity extends Activity implements OnTouchListener,OnGestureListener, OnClickListener, PlayInterface ,AudioRecordResult ,BridgeService.CameraLightInterfaceInterface{
 
@@ -454,7 +455,8 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 						lp.gravity = Gravity.CENTER;
 						playSurface.setLayoutParams(lp);
 					}
-					myRender.writeSample(videodata, nVideoWidths, nVideoHeights);
+					framePool.pushBytes(videodata, videoDataLen,nVideoWidths, nVideoHeights);
+					//myRender.writeSample(videodata, nVideoWidths, nVideoHeights);
 				}
 					break;
 				case 2: // JPEG
@@ -543,7 +545,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 		}
 	};
 
-
+	private VideoFramePool framePool;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -572,9 +574,16 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 				R.anim.ptz_otherset_anim_show);
 		dismissAnim = AnimationUtils.loadAnimation(this,
 				R.anim.ptz_otherset_anim_dismiss);
-		
+
+
+
 		myRender = new MyRender(playSurface);
+		framePool = new VideoFramePool(playSurface,myRender);
+		framePool.setFrameRate(15);
+		framePool.start();
 		playSurface.setRenderer(myRender);
+
+
 
 		showTop();
 		showBottom();
@@ -635,6 +644,7 @@ public class PlayActivity extends Activity implements OnTouchListener,OnGestureL
 			} else {
 				showSureDialog();
 			}
+			framePool.exit();
 		}
 		return super.onKeyDown(keyCode, event);
 	}

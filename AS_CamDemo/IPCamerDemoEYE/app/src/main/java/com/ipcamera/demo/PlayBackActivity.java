@@ -125,7 +125,7 @@ public class PlayBackActivity extends BaseActivity implements PlayBackInterface,
 			case 1: {// h264
 
 				textTimeStamp.setText(timeShow);
-				myRender.writeSample(videodata, nVideoWidth, nVideoHeight);
+				myRender.writeSample(videodata,videodata.length, nVideoWidth, nVideoHeight);
 				playImg.setVisibility(View.GONE);
 				int width = getWindowManager().getDefaultDisplay().getWidth();
 		
