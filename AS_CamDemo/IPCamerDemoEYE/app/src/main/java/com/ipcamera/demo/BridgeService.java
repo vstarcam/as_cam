@@ -732,7 +732,7 @@ public class BridgeService extends Service
 				+ " height:" + height);
 		if (playBackInterface != null) {
 			playBackInterface.callBackPlaybackVideoData(videobuf, h264Data,
-					len, width, height,time,FrameType,originFrameLen);
+					len, width, height,time,FrameType,originFrameLen, 0, 0);
 		}
 	}
 
@@ -1141,7 +1141,7 @@ public class BridgeService extends Service
 
 	public interface PlayBackInterface {
 		void callBackPlaybackVideoData(byte[] videobuf, int h264Data, int len,
-				int width, int height,int time,int frameType,int originGrameLen);
+                                       int width, int height, int time, int frameType, int originFrameLen, float pos, float cachePOS);
 	}
 
 	private static AddCameraInterface addCameraInterface;
@@ -1367,10 +1367,10 @@ public class BridgeService extends Service
 	public void CallBack_TFCardPlayback(String did, byte[] yuv, int type,
 			int size,int width,int height, int timestamp,float pos,float cachePOS) {
 
-		Log.e("videodate brig","did"+did+"yuv"+yuv.length+"width"+width+"height"+height + "timestamp"+timestamp);
+		Log.e("videodate brig","did"+did+"yuv"+yuv.length+"width"+width+"height"+height);
 		if (playBackInterface != null) {
 			playBackInterface.callBackPlaybackVideoData(yuv, 1,
-					size, width, height,timestamp,type,0);
+					size, width, height,timestamp,type,0, pos, cachePOS);
 		}
 	}
 

@@ -192,8 +192,6 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		filter.addAction("finish");
 		registerReceiver(receiver, filter);
 		intentbrod = new Intent("drop");
-		Log.e("vst","encry==="+NativeCaller.DeviceEncryptStr("12345678","12345678"));
-		//NativeCaller.DeviceEncryptStr("12345678","12345678");
 	}
 
 	@Override

@@ -350,4 +350,49 @@ public class MyRender implements Renderer
 	  }
 	}
 
+    public int writeSample(byte[] paramArrayOfByte ,int width,int height)
+    {
+        synchronized (this) {
+            if ((width == 0) || (height == 0)){
+                Log.d("writesample", "invalid param");
+                return 0;
+            }
+
+            if ((width != this.mWidth) || (height != this.mHeight))
+            {
+                this.mWidth = width;
+                this.mHeight = height;
+                this.mYByteBuffer = ByteBuffer.allocate(this.mWidth * this.mHeight);
+                this.mUByteBuffer = ByteBuffer.allocate(this.mWidth * this.mHeight / 4);
+                this.mVByteBuffer = ByteBuffer.allocate(this.mWidth * this.mHeight / 4);
+            }
+
+            if (this.mYByteBuffer != null)
+            {
+                this.mYByteBuffer.position(0);
+                this.mYByteBuffer.put(paramArrayOfByte, 0, this.mWidth * this.mHeight);
+                this.mYByteBuffer.position(0);
+            }
+
+            if (this.mUByteBuffer != null)
+            {
+                this.mUByteBuffer.position(0);
+                this.mUByteBuffer.put(paramArrayOfByte, this.mWidth * this.mHeight, this.mWidth * this.mHeight / 4);
+                this.mUByteBuffer.position(0);
+            }
+
+            if (this.mVByteBuffer != null)
+            {
+                this.mVByteBuffer.position(0);
+                this.mVByteBuffer.put(paramArrayOfByte, 5 * (this.mWidth * this.mHeight) / 4, this.mWidth * this.mHeight / 4);
+                this.mVByteBuffer.position(0);
+            }
+
+            bNeedSleep = false;
+
+            return 1;
+
+        }
+    }
+
 }
