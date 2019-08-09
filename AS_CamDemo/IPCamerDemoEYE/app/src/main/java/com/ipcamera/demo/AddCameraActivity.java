@@ -515,6 +515,7 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 			AddCameraActivity.this.finish();
 			return false;
 		}
+		System.exit(0);
 		return false;
 	}
 

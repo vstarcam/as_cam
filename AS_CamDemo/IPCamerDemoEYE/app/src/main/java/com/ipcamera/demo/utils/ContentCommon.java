@@ -208,6 +208,8 @@ public class ContentCommon {
 	public static final int LOWTEMP_ALARM = 0x16;//低温报警
 	public static final int LOWPOWER_ALARM = 0x17;//低电报警
 	public static final int CRY_ALARM = 0x18;//哭声报警
+
+	public static final int CGI_IESET_ALIAS = 0x600f;//修改名称
 	
 	
 

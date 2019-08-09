@@ -229,6 +229,9 @@ public class BridgeService extends Service
 				sCardInterface.callBackSetSystemParamsResult(did, paramType,result);
 			}
 			break;
+		case ContentCommon.CGI_IESET_ALIAS:
+			// TODO: 2019-08-09 修改名称回调 
+			break;
 		default:
 			break;
 		}

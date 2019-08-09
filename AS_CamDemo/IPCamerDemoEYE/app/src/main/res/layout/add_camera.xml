@@ -83,7 +83,7 @@
                         android:layout_weight="1"
                         android:maxLength="64"
                         android:singleLine="true"
-                        android:text=""
+
                         android:textColor="@color/black" />
                 </LinearLayout>
 
@@ -156,7 +156,7 @@
                         android:maxLength="20"
                         android:password="true"
                         android:singleLine="true"
-                        android:text=""
+
                         android:textColor="@color/color_black"></EditText>
                 </LinearLayout>
 
