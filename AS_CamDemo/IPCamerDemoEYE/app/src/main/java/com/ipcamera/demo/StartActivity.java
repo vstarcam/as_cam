@@ -1,6 +1,5 @@
 package com.ipcamera.demo;
 
-import java.util.Date;
 
 import com.ipcamer.demo.R;
 
@@ -15,9 +14,11 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 public class StartActivity extends Activity {
 	private static final String LOG_TAG = "StartActivity";
+	private TextView version;
 	private Handler mHandler = new Handler() {
 		public void handleMessage(Message msg) {
 			Intent in = new Intent(StartActivity.this, AddCameraActivity.class);
@@ -34,6 +35,8 @@ public class StartActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.start);
+		version = (TextView)findViewById(R.id.version);
+		version.setText("jni_code:"+NativeCaller.GetVersion());
 		Intent intent = new Intent();
 		intent.setClass(StartActivity.this, BridgeService.class);
 		startService(intent);
@@ -45,6 +48,7 @@ public class StartActivity extends Activity {
 					Thread.sleep(3000);
 					Message msg = new Message();
 					mHandler.sendMessage(msg);
+					Log.e("vst","path"+getApplicationContext().getFilesDir().getAbsolutePath());
                     NativeCaller.SetAPPDataPath(getApplicationContext().getFilesDir().getAbsolutePath());
 				} catch (Exception e) {
 

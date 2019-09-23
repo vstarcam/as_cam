@@ -9,25 +9,26 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d544a20-fbb1-4626-a708-9ecbb067e6d7" name="Default Changelist" comment="">
+    <list default="true" id="936c2b67-a93c-4f95-a038-81f3115ae0b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_jars____Users_onesand_Desktop_vstarcam_githubforvststarcam_as_cam_AS_CamDemo_IPCamerDemoEYE_app_libs_GetuiSDK2_13_1_0_jar_unspecified_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle____local_jars____Users_onesand_Desktop_vstarcam_githubforvststarcam_as_cam_AS_CamDemo_IPCamerDemoEYE_app_libs_json_simple_1_1_jar_unspecified_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/ContentCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/ContentCommon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/StartActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/StartActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/jniLibs/arm64-v8a/libvstc2_jni.so" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/arm64-v8a/libvstc2_jni.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi-v7a/libvstc2_jni.so" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi-v7a/libvstc2_jni.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/add_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/add_camera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/start.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/start.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,82 +44,31 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="IPCamerDemoEYE" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BaseActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="223" column="87" selection-start-line="223" selection-start-column="87" selection-end-line="223" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/vstc2/nativecaller/NativeCaller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="71" column="48" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ptz_brightness</find>
-      <find>preset</find>
-      <find>ptz_take_videos</find>
-      <find>ptz_take_photos</find>
-      <find>circularProgress</find>
-      <find>circularProgress.setProgress</find>
-      <find>strName</find>
-      <find>ptz_play_pause</find>
-      <find>playback_img</find>
-      <find>R.id.textosd</find>
-      <find>textosd</find>
-      <find>textback</find>
-      <find>back</find>
-      <find>savePicToSDcard</find>
-      <find>takePicture</find>
-      <find>ipcamerademo</find>
-      <find>takepic</find>
-      <find>PPPPSnapshotNotify</find>
-      <find>sho</find>
-      <find>BSSnapshotNotify</find>
-      <find>CallBack_Snapshot</find>
-      <find>PPPPUserSettingNew</find>
-      <find>settingPwd</find>
-      <find>pwd_setting</find>
-      <find>CallBack_UserParams</find>
-      <find>finish</find>
-      <find>onkey</find>
-      <find>SetSystemParamsResult</find>
-      <find>CGI_IESET_ALIAS</find>
-      <find>600f</find>
+      <find>receiver payload</find>
+      <find>SetAPPDataPath</find>
+      <find>main</find>
+      <find>btn_ip</find>
+      <find>oncreate</find>
     </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
-  <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../../../../../cloud/svn/Eye4_as_5.3.2/eye4_40/doc/android.keystore" />
-    <option name="KEY_ALIAS" value="android.keystore" />
-    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -126,88 +76,38 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/MyRender.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/CircularProgressBar.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayCommonManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/playback.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/start.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/StartActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/add_camera.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/ContentCommon.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1270" />
+    <option name="width" value="1312" />
     <option name="height" value="1007" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="IPCamerDemoEYE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IPCamerDemoEYE" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="IPCamerDemoEYE" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="IPCamerDemoEYE" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="huawei-huawei_tit_al00-AVY9KA4642929374" />
-    <property name="DEBUGGABLE_PROCESS" value="com.ipcamer.demo" />
-    <property name="DEBUGGER_ID" value="Auto" />
-    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
-    <property name="ExportApk.BuildVariants" value="release" />
-    <property name="ExportApk.SignV1" value="true" />
-    <property name="ExportApk.SignV2" value="true" />
-    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="ScreenshotViewer.SavePath" value="$PROJECT_DIR$/../../../../.." />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="H8U4C16603001408" />
+    <property name="device.picker.selection" value="127.0.0.1:5555" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1565268597230" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.ipcamera.demo" />
-      <recent name="com.ipcamera.demo.utils" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
-    </key>
+    <property name="sync.plugin.last.upgrade.timestamp" value="1569203720948" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -288,278 +188,167 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d544a20-fbb1-4626-a708-9ecbb067e6d7" name="Default Changelist" comment="" />
-      <created>1560242730978</created>
+      <changelist id="936c2b67-a93c-4f95-a038-81f3115ae0b1" name="Default Changelist" comment="" />
+      <created>1568281508876</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560242730978</updated>
+      <updated>1568281508876</updated>
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1270" height="1007" extended-state="0" />
+    <frame x="0" y="23" width="1312" height="1007" extended-state="0" />
     <layout>
-      <window_info active="true" id="Captures" order="0" sideWeight="0.11692844" side_tool="true" visible="true" weight="0.6042345" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.88307154" visible="true" weight="0.6042345" />
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.5322835" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Build Variants" order="4" side_tool="true" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="6" />
-      <window_info id="Resources Explorer" order="7" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.3295964" />
-      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.3576233" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.7520776" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.6266816" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3295964" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.58183855" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.5134529" />
-      <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946752" weight="0.033632286" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.3295964" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.3295964" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5005325" side_tool="true" weight="0.9663677" />
+      <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.3396861" />
+      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="right" id="Preview" weight="0.32960597" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.32960597" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.31363153" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Flutter Inspector" order="6" />
-      <window_info anchor="right" id="Flutter Outline" order="7" />
+      <window_info anchor="right" id="Flutter Inspector" order="4" />
+      <window_info anchor="right" id="Flutter Outline" order="5" weight="0.32960597" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java</url>
-          <line>298</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java</url>
-          <line>295</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/customprogress_thumb.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/customprogress.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ptz_takepic_selector.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ptz_pause.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-23/android.jar!/android/graphics/BitmapFactory.class">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/DemoPushService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-23/android.jar!/android/media/MediaScannerConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ptz_takevideo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/easyicon_cn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ptz_default_set_selector.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ptz_takepic.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/play.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="247" column="11" selection-start-line="247" selection-start-column="11" selection-end-line="256" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/CircularProgressBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1412">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="165">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/MySharedPreferenceUtil.java">
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-23/android.jar!/android/webkit/WebView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="-178">
+          <folding>
+            <element signature="e#0#19038#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/MyRender.java">
+    <entry file="file://$PROJECT_DIR$/../../../../../device-2019-09-20-151124.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/net/HttpConstances.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5130">
-          <caret line="352" column="50" selection-start-line="352" selection-start-column="50" selection-end-line="352" selection-end-column="50" />
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/del.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayCommonManager.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/StartActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="288" column="19" selection-start-line="288" selection-start-column="19" selection-end-line="288" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/back.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayBackActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/DemoIntentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="312" column="84" selection-start-line="312" selection-start-column="84" selection-end-line="312" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="199">
+          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/playback.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/start.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/vstc2/nativecaller/NativeCaller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2324">
-          <caret line="72" column="40" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="40" />
+        <state relative-caret-position="294">
+          <caret line="240" column="41" selection-start-line="240" selection-start-column="31" selection-end-line="240" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="152" column="4" selection-start-line="152" selection-start-column="4" selection-end-line="152" selection-end-column="4" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ip_connect.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-532" />
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayVRActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/IpConnectActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="1949" column="42" selection-start-line="1949" selection-start-column="21" selection-end-line="1949" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/SettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="97" column="70" selection-start-line="97" selection-start-column="70" selection-end-line="97" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/setting.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-23/android.jar!/android/content/ContextWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="256" column="16" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
-          <folding>
-            <element signature="e#6955#6956#0" expanded="true" />
-            <element signature="e#7006#7007#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/SettingUserActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="212" column="35" selection-start-line="212" selection-start-column="16" selection-end-line="212" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/PlayActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7995">
-          <caret line="621" column="17" selection-start-line="620" selection-start-column="20" selection-end-line="621" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="517" column="19" selection-start-line="517" selection-start-column="8" selection-end-line="517" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_camera.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/AddCameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="167" column="27" selection-start-line="166" selection-start-column="50" selection-end-line="167" selection-end-column="27" />
+        <state relative-caret-position="211">
+          <caret line="178" column="37" selection-start-line="178" selection-start-column="37" selection-end-line="178" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BaseActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="1605">
+          <caret line="107" column="49" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/utils/ContentCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="173" column="28" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ipcamera/demo/BridgeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="223" column="87" selection-start-line="223" selection-start-column="87" selection-end-line="223" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/vstc2/nativecaller/NativeCaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="71" column="48" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

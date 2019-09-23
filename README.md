@@ -43,6 +43,16 @@ TF file  缓存以及下载
 
 
 
+## 20190923
+
+更新libvstc2_jni.so(删除libpng依赖满足google审核要求)
+
+jni_code:4664
+
+
+
+
+
 
 
 
