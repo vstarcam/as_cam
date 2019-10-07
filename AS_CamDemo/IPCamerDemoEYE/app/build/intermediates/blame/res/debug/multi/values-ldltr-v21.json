@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 112,
+                    "endOffset": 163
+                },
+                "from": {
+                    "file": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 112,
+                        "endOffset": 163
+                    }
+                }
+            }
+        ]
+    }
+]

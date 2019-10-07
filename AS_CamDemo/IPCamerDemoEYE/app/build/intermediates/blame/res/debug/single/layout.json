@@ -1,0 +1,346 @@
+[
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/play.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/play.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/playbacktf_listitem.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/playbacktf_listitem.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/local_picture.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/local_picture.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingdate_ntpserver_popwindow.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingdate_ntpserver_popwindow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/localpicture_listitem.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/localpicture_listitem.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/linkcamera_layout.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/linkcamera_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingdate.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingdate.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/ptz_resolution_h264.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/ptz_resolution_h264.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/playbacktf.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/playbacktf.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/setting_list_item.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/setting_list_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/control_device_view.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/control_device_view.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingsensorlist.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingsensorlist.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/add_camera.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/add_camera.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/alermtriggerpopwindow.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/alermtriggerpopwindow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/showlocalpicgrid.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/showlocalpicgrid.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/search_list_item.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/search_list_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/brightprogress.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/brightprogress.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/edit_sensor.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/edit_sensor.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/start.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/start.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/videotape_timing_setting.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/videotape_timing_setting.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/sensoradapterlayout.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/sensoradapterlayout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingwifi.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingwifi.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/playback.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/playback.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/startcode_layout.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/startcode_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingsdcard.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingsdcard.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingalarm.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingalarm.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/popup_d.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/popup_d.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/sensorlist_item_sensortype_item.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/sensorlist_item_sensortype_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/move_message.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/move_message.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/popuppreset.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/popuppreset.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/showlocalvideo_activity.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/showlocalvideo_activity.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/loadmorecount.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/loadmorecount.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/alermpresetmovepopwindow.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/alermpresetmovepopwindow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/activity_ip_connect.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/activity_ip_connect.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/alermaudiopopwindow.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/alermaudiopopwindow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/timing_video_item.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/timing_video_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingdate_timezone_popwindow.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingdate_timezone_popwindow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/ptz_resolution_jpeg.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/ptz_resolution_jpeg.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/preset_view.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/preset_view.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/setting.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/setting.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/update_firmware_view.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/update_firmware_view.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/alermsensitivepopwindow.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/alermsensitivepopwindow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/activity_message.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/activity_message.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/showlocalpicgrid_griditem.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/showlocalpicgrid_griditem.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/alermiooutpopwindow.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/alermiooutpopwindow.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settingwifi_list_item.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settingwifi_list_item.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/settinguser.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/settinguser.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/onesand/.android/build-cache/f8972dc2a0e593df65ce14e8ddfb8046509c783c/output/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/build/intermediates/res/merged/debug/layout/message_list_item.xml",
+        "source": "/Users/onesand/Desktop/vstarcam/gitvstarcam/as_cam/AS_CamDemo/IPCamerDemoEYE/app/src/main/res/layout/message_list_item.xml"
+    }
+]

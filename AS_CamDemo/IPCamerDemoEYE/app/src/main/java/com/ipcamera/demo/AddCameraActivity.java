@@ -362,7 +362,7 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		button_setting.setOnClickListener(this);
 		btn_ip.setOnClickListener(this);
 		btn_info.setOnClickListener(this);
-		if(true)
+		if(false)
         {
         	//具体使用方法，请联系 dfc@vstarcam.com
             btn_ip.setVisibility(View.GONE);
