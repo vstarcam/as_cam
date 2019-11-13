@@ -162,6 +162,45 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
 					SystemValue.devicePass,1,"","ADCBBFAOPPJAHGJGBBGLFLAGDBJJHNJGGMBFBKHIBBNKOKLDHOBHCBOEHOKJJJKJBPMFLGCPPJMJAPDOIPNL",0);
 		}
+
+		// TODO: 2019-11-13  
+		else if(SystemValue.deviceId.toLowerCase().startsWith("vstj"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","EEGDFHBLKGJIGEJNEOHEFBEIGANCHHMBHIFEAHDEAMJCKCKJDJAFDDPPHLKJIHLMBENHKDCHPHNJBODA:vstarcam2019",0);
+
+		}
+		else if(SystemValue.deviceId.toLowerCase().startsWith("vstk"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","EBGDEJBJKGJFGJJBEFHPFCEKHGNMHNNMHMFFBICPAJJNLDLLDHACCNONGLLPJGLKANMJLDDHODMEBOCIJEMA:vstarcam2019",0);
+
+		}
+		else if(SystemValue.deviceId.toLowerCase().startsWith("vstm"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","EBGEEOBOKHJNHGJGEAGAEPEPHDMGHINBGIECBBCBBJIKLKLCCDBBCFODHLKLJJKPBOMELECKPNMNAICEJCNNJH:vstarcam2019",0);
+
+		}
+		else if(SystemValue.deviceId.toLowerCase().startsWith("vstn"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","EEGDFHBBKBIFGAIAFGHDFLFJGJNIGEMOHFFPAMDMAAIIKBKNCDBDDMOGHLKCJCKFBFMPLMCBPEMG:vstarcam2019",0);
+
+		}
+		else if(SystemValue.deviceId.toLowerCase().startsWith("vstl"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","EEGDFHBLKGJIGEJIEIGNFPEEHGNMHPNBGOFIBECEBLJDLMLGDKAPCNPFGOLLJFLJAOMKLBDFOGMAAFCJJPNFJP:vstarcam2019",0);
+
+		}
+		else if(SystemValue.deviceId.toLowerCase().startsWith("vstp"))
+		{
+			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
+					SystemValue.devicePass,1,"","EEGDFHBLKGJIGEJLEIGJFLENHLNBHCNMGAFGBNCOAIJMLKKODNALCCPKGBLHJLLHAHMBKNDFOGNGBDCIJFMB:vstarcam2019",0);
+
+		}
+     	
 		else {
 			NativeCaller.StartPPPPExt(SystemValue.deviceId, SystemValue.deviceName,
 					SystemValue.devicePass,1,"","",0);

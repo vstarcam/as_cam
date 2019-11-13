@@ -57,6 +57,6 @@ jni_code:4664
 
 
 
+## 20191113
 
-
-
+支持前缀为VSTJ、VSTK、VSTM、VSTN、VSTL、VSTP的ID
