@@ -95,6 +95,9 @@ public class ContentCommon {
 	public static final int PPPP_STATUS_CONNECT_ERRER = 8;
 	public static final int PPPP_STATUS_UNKNOWN = 0xffffffff;
 
+	public static final int PPPP_STATUS_INVALID_VUID = -2;//404  vuid无效
+	public static final int PPPP_STATUS_ALLOT_VUID = -3; //没有分配uid
+
 	public static final int PPPP_MSG_TYPE_PPPP_STATUS = 0;
 	public static final int PPPP_MSG_TYPE_PPPP_MODE = 1;
 	public static final int PPPP_MSG_TYPE_STREAM = 2;
@@ -107,6 +110,11 @@ public class ContentCommon {
 	public static final int PPPP_MODE_UNKNOWN = 0xffffffff;
 	public static final int PPPP_MODE_P2P_NORMAL = 1;
 	public static final int PPPP_MODE_P2P_RELAY = 2;
+
+
+	//start vuid by dunn 2019-10-22
+	public static final int PPPP_MSG_VSNET_NOTIFY_TYPE_VUIDSTATUS = 7;
+	public static final int PPPP_MSG_VSNET_NOTIFY_TYPE_VUIDTIME = 8;
 
 	// ptz control command ---------------------------------
 

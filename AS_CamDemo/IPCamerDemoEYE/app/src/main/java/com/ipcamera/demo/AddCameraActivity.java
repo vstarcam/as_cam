@@ -42,6 +42,7 @@ import com.ipcamera.demo.utils.ContentCommon;
 import com.ipcamera.demo.utils.MySharedPreferenceUtil;
 import com.ipcamera.demo.utils.MyStringUtils;
 import com.ipcamera.demo.utils.SystemValue;
+import com.ipcamera.demo.utils.VuidUtils;
 
 public class AddCameraActivity extends Activity implements OnClickListener,AddCameraInterface
      , OnItemSelectedListener, IpcamClientInterface,CallBackMessageInterface
@@ -115,7 +116,24 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 		public void run() {
 			try {
 				Thread.sleep(100);
-				startCameraPPPP();
+				if(VuidUtils.isVuid(SystemValue.deviceId))
+				{
+					int vuidStatus = NativeCaller.StartVUID("0",SystemValue.devicePass,1,"","",0,SystemValue.deviceId,0);
+                    Log.e("vst","vuidStatus"+vuidStatus);
+                    if(vuidStatus == -2)
+					{
+                        // TODO: 2019-11-25 VUID  无效
+						Bundle bd = new Bundle();
+						Message msg = PPPPMsgHandler.obtainMessage();
+						msg.what = ContentCommon.PPPP_MSG_VSNET_NOTIFY_TYPE_VUIDSTATUS;
+						bd.putInt(STR_MSG_PARAM, -2);
+						bd.putString(STR_DID, SystemValue.deviceId);
+						msg.setData(bd);
+						PPPPMsgHandler.sendMessage(msg);
+					}
+				}else {
+					startCameraPPPP();
+				}
 			} catch (Exception e) {
 
 			}
@@ -425,9 +443,6 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 			if(MySharedPreferenceUtil.getDeviceInformation(this,SystemValue.deviceId,ContentCommon.DEVICE_MODEL_TYPE).equals("1")||MySharedPreferenceUtil.getDeviceInformation(this,SystemValue.deviceId,ContentCommon.DEVICE_MODEL_TYPE).equals("2"))
 			{
 				intent = new Intent(AddCameraActivity.this,PlayVRActivity.class);
-			}else
-			{
-
 			}
 			startActivity(intent);
 			break;
@@ -637,9 +652,10 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 			int msgType = msg.what;
 			Log.i("aaa", "===="+msgType+"--msgParam:"+msgParam);
 			String did = bd.getString(STR_DID);
+			int resid = R.string.pppp_status_connecting;
 			switch (msgType) {
 			case ContentCommon.PPPP_MSG_TYPE_PPPP_STATUS:
-				int resid;
+
 				switch (msgParam) {
 				case ContentCommon.PPPP_STATUS_CONNECTING://0
 					resid = R.string.pppp_status_connecting;
@@ -709,7 +725,87 @@ public class AddCameraActivity extends Activity implements OnClickListener,AddCa
 				}
 				break;
 			case ContentCommon.PPPP_MSG_TYPE_PPPP_MODE:
+
 				break;
+			case ContentCommon.PPPP_MSG_VSNET_NOTIFY_TYPE_VUIDSTATUS:
+
+                switch (msgParam) {
+                    case ContentCommon.PPPP_STATUS_CONNECTING://0
+                        resid = R.string.pppp_status_connecting;
+                        progressBar.setVisibility(View.VISIBLE);
+                        tag = 2;
+                        break;
+                    case ContentCommon.PPPP_STATUS_CONNECT_FAILED://3
+                        resid = R.string.pppp_status_connect_failed;
+                        progressBar.setVisibility(View.GONE);
+                        tag = 0;
+                        break;
+                    case ContentCommon.PPPP_STATUS_DISCONNECT://4
+                        resid = R.string.pppp_status_disconnect;
+                        progressBar.setVisibility(View.GONE);
+                        tag = 0;
+                        break;
+                    case ContentCommon.PPPP_STATUS_INITIALING://1
+                        resid = R.string.pppp_status_initialing;
+                        progressBar.setVisibility(View.VISIBLE);
+                        tag = 2;
+                        break;
+                    case ContentCommon.PPPP_STATUS_INVALID_ID://5
+                        resid = R.string.pppp_status_invalid_id;
+                        progressBar.setVisibility(View.GONE);
+                        tag = 0;
+                        break;
+                    case ContentCommon.PPPP_STATUS_ON_LINE://2 在线状态
+                        resid = R.string.pppp_status_online;
+                        progressBar.setVisibility(View.GONE);
+                        //摄像机在线之后读取摄像机类型
+                        String cmd="get_status.cgi?loginuse=admin&loginpas=" + SystemValue.devicePass
+                                + "&user=admin&pwd=" + SystemValue.devicePass;
+                        NativeCaller.TransferMessage(did, cmd, 1);
+                        tag = 1;
+                        break;
+                    case ContentCommon.PPPP_STATUS_DEVICE_NOT_ON_LINE://6
+                        resid = R.string.device_not_on_line;
+                        progressBar.setVisibility(View.GONE);
+                        tag = 0;
+                        break;
+                    case ContentCommon.PPPP_STATUS_CONNECT_TIMEOUT://7
+                        resid = R.string.pppp_status_connect_timeout;
+                        progressBar.setVisibility(View.GONE);
+                        tag = 0;
+                        break;
+                    case ContentCommon.PPPP_STATUS_CONNECT_ERRER://8
+                        resid =R.string.pppp_status_pwd_error;
+                        progressBar.setVisibility(View.GONE);
+                        tag = 0;
+                        break;
+                    case ContentCommon.PPPP_STATUS_INVALID_VUID:
+                        resid =R.string.pppp_status_invalid_id;
+                        progressBar.setVisibility(View.GONE);
+                        tag = 0;
+                        break;
+					case ContentCommon.PPPP_STATUS_ALLOT_VUID:
+
+						break;
+
+                    default:
+                        resid = R.string.pppp_status_unknown;
+                }
+                textView_top_show.setText(getResources().getString(resid));
+                if (msgParam == ContentCommon.PPPP_STATUS_ON_LINE) {
+                    NativeCaller.PPPPGetSystemParams(did, ContentCommon.MSG_TYPE_GET_PARAMS);
+                    NativeCaller.TransferMessage(did,
+                            "get_factory_param.cgi?loginuse=admin&loginpas="
+                                    + SystemValue.devicePass + "&user=admin&pwd=" + SystemValue.devicePass, 1);// 检测push值
+                }
+                if (msgParam == ContentCommon.PPPP_STATUS_INVALID_ID
+                        || msgParam == ContentCommon.PPPP_STATUS_CONNECT_FAILED
+                        || msgParam == ContentCommon.PPPP_STATUS_DEVICE_NOT_ON_LINE
+                        || msgParam == ContentCommon.PPPP_STATUS_CONNECT_TIMEOUT
+                        || msgParam == ContentCommon.PPPP_STATUS_CONNECT_ERRER) {
+                    NativeCaller.StopPPPP(did);
+                }
+                break;
 
 			}
 

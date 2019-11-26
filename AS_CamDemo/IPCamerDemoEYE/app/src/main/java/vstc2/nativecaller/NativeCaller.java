@@ -5,7 +5,6 @@ import android.content.Context;
 
 public class NativeCaller {
 	static {
-
 		System.loadLibrary("vstc2_jni");
 	}
 
@@ -99,6 +98,14 @@ public class NativeCaller {
 	public native static void PPPPInitial(String svr);
 
 	public native static int PPPPSetCallbackContext(Context object);
+
+	/**
+	 初化回调接收服务
+	 @param   object:       java层接收回调的Service
+	 @param     version         库版本号(通过GetVersion获取,如果是值是-1代表使用的是最新版本)
+	 @return    1:成功调用接口
+	 */
+	public native static int PPPPSetCallbackContext2(Context object,int version);
 
 	public native static int PPPPRebootDevice(String did);
 
@@ -225,15 +232,35 @@ public class NativeCaller {
 	public native static int  MagLowpowerDeviceConnect(String jIP);
 	//置后台需要断开服务器
 	public native static void MagLowpowerDeviceDisconnect();
-	//获取与服务器连接状态
-	public native static int  GetConnectStatus();
-	//初化设备
+
+	//初化设备，5s返回设备状态
 	public native static int MagLowpowerInitDevice( String jdid);
-	//取设备状态
-	public native static int MagLowpowerGetDeviceStatus(String jdid);
+
+	// TODO: 2019-10-14 低功耗设备状态(jni__version >= 4665)
+	/**
+	 *  P2P连接状态
+	 *  @param deviceIdentity 设备jdid
+	 *  @param return p2p状态
+	 */
+	public native static int GetP2PConnetState(String jdid);
+
 	//唤醒设备
 	public native static int MagLowpowerAwakenDevice(String jdid);
-/**************************低功耗设备端接口end************************************/
+
+	/**
+	 *  唤醒设备保持设备激活
+	 *  @param deviceIdentity 设备id
+	 *  @param time      设备延时休眠时间不得少5秒
+	 */
+	public native static int MagLowpowerKeepDeviceActive(String jdid,int time);
+
+	/**
+	 *  time后立刻让设备休眠
+	 *  @param deviceIdentity 设备id
+	 */
+	public native static int MagLowpowerSleepDevice(String jdid,int time);
+
+	/**************************低功耗设备端接口end************************************/
 	//p2pVer:0->PPPP 1->XQP2P
 	public native  static  int GetP2PVersion(int p2pVer);
 
@@ -255,4 +282,18 @@ public class NativeCaller {
 
 	public native static void FisheyeYUVdataSplit(byte[] inYUV,byte[] OutY,byte[] OutU,byte[] OutV,int nVideoWidth,int nVideoHeight,int nCut);
 
+	/**
+	 双重认证P2P连接
+	 @param   did:           UID
+	 @param   pwd:           密码
+	 @param   bEnableLanSearch:   指定服务器
+	 @param   accountname:       accountname
+	 @param   svr_no:         P2P服务器串
+	 @param   add:            1:首次(绑定设备时) 0:已经绑定好了设备用
+	 @param     strVUID:        设备VUID
+	 @param     timestamp       上次在线unix时间戳(取不到就传0)
+	 @return
+	 */
+	public native static int StartVUID(String did, String pwd,int bEnableLanSearch,String accountname,String svr_no,int add,String strVUID,long timestamp);
+	//end vuid
 }

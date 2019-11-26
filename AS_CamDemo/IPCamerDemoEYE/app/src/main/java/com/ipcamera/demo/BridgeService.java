@@ -42,7 +42,8 @@ public class BridgeService extends Service
 		super.onCreate();
 		Log.d("tag", "BridgeService onCreate()");
 		notifyManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-		NativeCaller.PPPPSetCallbackContext(this);
+		//NativeCaller.PPPPSetCallbackContext(this);
+		NativeCaller.PPPPSetCallbackContext2(this,-1);
 	}
 
 	@Override
@@ -110,6 +111,7 @@ public class BridgeService extends Service
 //		if (playInterface != null) {
 //			playInterface.callBackMessageNotify(did, msgType, param);
 //		}
+		Log.d("vst", "###MessageNotify### did="+did+", type="+type+", param"+param+", did="+did);
 		if (ipcamClientInterface != null) {
 			ipcamClientInterface.BSMsgNotifyData(did, type, param);
 		}
@@ -169,7 +171,7 @@ public class BridgeService extends Service
 	
 	public void SearchResult(String sysVer, String appVer, String strMac,
 			String strName, String strDeviceID, String strIpAddr, int port) {
-		
+
 		if (strDeviceID.length() == 0) {
 			return;
 		}
@@ -179,6 +181,8 @@ public class BridgeService extends Service
 		}
 
 	}
+
+
 
 	// ======================callback==================================================
 	/**
@@ -1386,6 +1390,61 @@ public class BridgeService extends Service
 
 	}
 
+	//start vuid
+	/**
+	 搜索回调(只有sdk版本0x1240以上的就用这个收到搜索通知，低于那版本使用SearchResult收取)
+	 @param   sysVer:        设备固件版本
+	 @param   appVer:        设备
+	 @param   strMac:        设备Mac地址
+	 @param   strName:        设备名字
+	 @param   strDeviceID:   设备UID
+	 @param   strIpAddr:     设备IP
+	 @param   port:           设备端口号
+	 @param   strUID:        设备uid
+	 */
+	public void CallBack_SearchVUIDResult(String sysVer, String appVer, String strMac, String strName, String strDeviceID, String strIpAddr, int port,String strUID) {
+		Log.d("vst", "user strDeviceID:" + strDeviceID + " strVUID:" + strUID);
+		if (strDeviceID.length() == 0) {
+			return;
+		}
+		if (addCameraInterface != null) {
+			addCameraInterface.callBackSearchResultData(0, strMac,
+					strName, strDeviceID, strIpAddr, port);
+		}
 
+	}
+
+	//start vuid by dunn 2019-10-22
+	/**
+	 StartVUID连接时状态
+	 @param   did:       UID
+	 @param   vuid:     vuid
+	 @param   type:     消息类型
+	 @param   param:     通知ID
+	 */
+	public void VUIDMsgNotify(String did, String vuid,int type,long param) {
+		Log.d("vst", "###VUIDMsgNotify### vuid="+vuid+", type="+type+", param"+param+", did="+did);
+		if (ipcamClientInterface != null) {
+			ipcamClientInterface.BSMsgNotifyData(did, ContentCommon.PPPP_MSG_VSNET_NOTIFY_TYPE_VUIDSTATUS, type);
+		}
+		if (wifiInterface != null) {
+			wifiInterface.callBackPPPPMsgNotifyData(did, ContentCommon.PPPP_MSG_VSNET_NOTIFY_TYPE_VUIDSTATUS, type);
+		}
+
+		if (userInterface != null) {
+			userInterface.callBackPPPPMsgNotifyData(did, ContentCommon.PPPP_MSG_VSNET_NOTIFY_TYPE_VUIDSTATUS, type);
+
+		}
+	}
+	/**20190304======进度回调
+	 合并视频文件的进度回调
+	 @param   did:       UID
+	 @param   pos:       0.0~1.0进度（只代表某个文件）
+	 @param   index:     文件索引(第几个文件)
+	 @param   nError:     0：有错误 1:无错误
+	 */
+	public void CallBack_MergeVideoPos(String did, float pos,int index,int nError) {
+
+	}
 
 }
